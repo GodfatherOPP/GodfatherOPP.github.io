@@ -110,6 +110,16 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         margin-bottom: 0px;
         margin-top: 10px;
     }
+    .gallery  tr td .image3 {
+        width: 150;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .gallery  tr td .image6 {
+        width: 150;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
     
     .image-caption p{
         margin: 0px;
