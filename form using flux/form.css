@@ -1,61 +1,81 @@
-.body {
-    background-image: url("images.jpeg");
-background-repeat: repeat;
-width: 1000px ;}
-.head {
-  margin-left: 500px;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-}
-.description {
-    font-style: italic;
-font-weight: 200;
-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-text-align: center;
-margin-left: 500px;
-color: rgb(116, 110, 110);}
-.form {
-   /* background-image: url("images.jpeg");*/
-    backface-visibility: 50%;
-    border: 1px solid white;
-    background-color: rgba(27, 27, 50, 0.8);
-    margin-left: 500px;
-    color: white;
-}
-.name {
-    margin: 16px 0 7px 0px
-}
-.namebox {display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;}
-    .email {margin: 16px 0 7px 0px}
-    .emailname { width: 100%;
-        height: 34px;
-        padding: 6px 12px;
-        font-size: 14px;
-        line-height: 1.42857143;
-        color: #555;
-        background-color: #fff;
-        background-image: none;
-        border: 1px solid #ccc;
-        border-radius: 4px;}
-.age { width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;}
+
+    body{
+        text-align: center;
+        overflow: scroll;
+        font-family: helvetica;
+        background: var(--color-darkblue);
+        background-image: linear-gradient(
+            115deg,
+            rgba(51, 51, 184, 0.8),
+            rgba(103, 103, 177, 0.7)
+          ),
+          url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+          
+          letter-spacing: 2px;
+        }
+    .body{
+        width: 640px;
+        padding: 20px;
+        padding-left: 30px;
+        margin: auto;
+        background-color: rgba(0,0,0,0.6);
+        text-align: left;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        
+    }
     
+     .head {
+         color: white;
+         font-size: 40px;
+         font-style: oblique;
+     }
+     .description {
+         color: white;
+         font-size: 20px;
+         font-style: italic;
+         letter-spacing: 2px;
+     }
+    .namebox {
+        width: 560px;
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .emailbox {
+        width: 560px;
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .agebox {
+        width: 560px;
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .textbox {
+        width: 560px;
+        height: 150px;
+    }
+    .options{
+        width: 560px;
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .feature {
+        width: 560px;
+        padding: 15px;
+        border-radius: 7px;
+    }
+    
+    .submit-button{
+        width: 575px;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 1px;
+        border: none;
+        margin-top: 3%;
+        color: white;
+        background-color: rgb(19, 143, 19);
+        
+    }
+   
