@@ -40,7 +40,7 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     }
 
     .flex-main .tagline{
-        font-size: 20px;
+        font-size: 25px;
         color: #c00707;
         text-align: center;
     }
@@ -48,27 +48,31 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 
 
     .gallery {
-        background-color:rgb(21, 21, 46);
+       
         height: 1000px;
         margin-top: 0em;
-    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right:75px ;
+        padding-left: 75px;
+        background-color: #627194;
     }
-    .photos-title {font-size: 1.5em;
-        text-align: center;
-        color: white;
-    }
+
     
 
     .photos-title {
         display: flex;
         justify-content: center;
         background-color: #627194;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        
     }
     
     .photos-title h1 {
         font-size: 30px;
         color:white;
-        padding: 10px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: italic;
         text-decoration-line: underline;
@@ -77,49 +81,22 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         margin: 0%;
     }
     
-     .gallery {
-        display: flex;
-        justify-content: space-around;
-        background-color: #627194;
-    }
+     
     .gallery section {
         align-content: center;
     }
-    .gallery table {
-        align-self: center;
-        align-items: center;
-        width: 100%;
-        margin: 40px;  
-    }
     
-    .gallery table tr{
-        cellpadding: 20px;
-        align-items: center;
-    }
-    
-    .gallery table td{
-        width: 33%;
-        margin:50px;
-        padding: 40px;
-        align-items: center;
-    }
+   
     
     .gallery img {
-        
+        margin-right: 50px;
         width: 300px;
         margin-bottom: 0px;
         margin-top: 10px;
     }
-    .gallery  tr td .image3 {
-        width: 150;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
-    .gallery  tr td .image6 {
-        width: 150;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
+   .gallery .img3 {
+       height: 200px;
+   }
     
     .image-caption p{
         margin: 0px;
@@ -172,7 +149,7 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         word-spacing: 7px;
         transition: word-spacing 0.5s ease-in-out;
     }
-    .foot {
+    .foot {flex-direction: column;
         display: flex;
         height: 300px;
         margin: 0;
@@ -209,6 +186,7 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 10px;
         color: white;
+        justify-content: center;
     }
     
     .foot table {
@@ -222,6 +200,8 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         color: white;
         align-items: center;    
     }
+   
+
     
     .facebook a{
         color: white;
