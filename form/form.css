@@ -22,6 +22,7 @@
         text-align: left;
         border-radius: 10px;
         font-size: 20px;
+        font-family: 'Poppins', sans-serif;
         color: white;
         
     }
@@ -37,34 +38,38 @@
          font-style: italic;
          letter-spacing: 2px;
      }
-    .namebox {
+     .name {
+         margin-bottom: 5px;
+     }
+    .inputbox {
         width: 560px;
-        padding: 15px;
+        padding-left: 15px;
         border-radius: 7px;
-    }
-    .emailbox {
-        width: 560px;
-        padding: 15px;
-        border-radius: 7px;
-    }
-    .agebox {
-        width: 560px;
-        padding: 15px;
-        border-radius: 7px;
+        height: 45;
+        font-size: inherit;
+        margin-bottom: 15px;
     }
     .textbox {
         width: 560px;
         height: 150px;
-    }
-    .options{
-        width: 560px;
-        padding: 15px;
-        border-radius: 7px;
+        height: 150;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: inherit;
     }
     .feature {
         width: 560px;
         padding: 15px;
         border-radius: 7px;
+        height: 45;
+        font-size: inherit;
+    }
+    .feedback {
+        display: flex;
+        flex-direction: column;
+    }
+    .lable {
+        margin-bottom: 1rem;
     }
     
     .submit-button{
@@ -76,3 +81,16 @@
         margin-top: 3%;
         color: white;
         background-color: rgb(19, 143, 19);}
+        input [type=text] { 
+            font-size: larger;
+        }
+        .clue {
+            color: #e4e4e4;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        @media (min-width:600px){
+            body{
+                width: 100%;
+            }
+        }
