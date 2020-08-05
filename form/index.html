@@ -17,10 +17,10 @@
       <p class="name">Name:</p>
      <input type="text"  name="name" placeholder="Enter your name" class="namebox"/>
     <!--Email-->
-    <p class="email">email:</p> 
+    <p class="email">Email:</p> 
     <input type="email" name="email" placeholder="Enter your email here" class="emailbox"/>
     <!--Age-->
-    <p>age (optional):</p> 
+    <p>Age (optional):</p> 
     <input type="number" value="age" name="age" placeholder="Enter your age here" class="agebox"/>
     <p>Which option does best describe your current role:</p>
     <select class="options">
@@ -31,9 +31,9 @@
     <option value="other">other</option> </select>
     
     <p>would you recommend freecodecamp to your friend:</p>
-    <input type="radio" name="feedback" value="definitely" checked>definitely<br>
-    <input type="radio" name="feedback" value="maybe">maybe<br>
-    <input type="radio" name="feedback" value="Not sure">Not sure<br>
+    <label><input type="radio" name="feedback" value="definitely" checked>definitely</label><br>
+    <label><input type="radio" name="feedback" value="maybe">maybe</label><br>
+    <label><input type="radio" name="feedback" value="Not sure">Not sure</label><br>
 
     <p>What is your favorite feature of freeCodeCamp?</p>
     <!--<p><select class="options2">
@@ -44,17 +44,19 @@
      <input type="text" name="feature" class="feature" placeholder="Enter your favourite feature" required="">
 
    <p> what would you like to see improved?(check all that apply)</p>
-    <input type="checkbox" name="prefer" value="front-end project">front-end project<br>
-     <input type="checkbox" name="prefer" value="Back-end project">Back-end project<br>
-     <input type="checkbox" name="prefer" value="Data vizulisation"> Data vizulisation<br>
-     <input type="checkbox" name="prefer" value="challanges">front-end project<br>
-     <input type="checkbox" name="prefer" value="open source community">front-end project<br>
-     <input type="checkbox" name="prefer" value="gitter help room">front-end project <br>
-     <input type="checkbox" name="prefer" value="videos">front-end project <br>
-     <input type="checkbox" name="prefer" value="city meetups">front-end project<br> 
-     <input type="checkbox" name="prefer" value="wiki">front-end project <br>
-     <input type="checkbox" name="prefer" value="forum">front-end project <br>
-     <input type="checkbox" name="prefer" value="Aditional courses">front-end project<br><br>
+      <p class="feedback">
+     <lable><input type="checkbox" name="prefer" value="front-end project">front-end project<br></lable>
+     <lable><input type="checkbox" name="prefer" value="Back-end project">Back-end project<br></lable>
+     <lable><input type="checkbox" name="prefer" value="Data vizulisation"> Data vizulisation<br></lable>
+     <lable><input type="checkbox" name="prefer" value="challanges">front-end project<br></lable>
+     <lable><input type="checkbox" name="prefer" value="open source community">front-end project<br></lable>
+     <lable><input type="checkbox" name="prefer" value="gitter help room">front-end project <br></lable>
+     <lable><input type="checkbox" name="prefer" value="videos">front-end project <br></lable>
+     <lable><input type="checkbox" name="prefer" value="city meetups">front-end project<br> </lable>
+     <lable><input type="checkbox" name="prefer" value="wiki">front-end project <br></lable>
+     <lable><input type="checkbox" name="prefer" value="forum">front-end project <br></lable>
+     <lable><input type="checkbox" name="prefer" value="Aditional courses">front-end project<br><br></lable>
+    </p>
      <p>Any comments or suggestions?</p>
      <textarea placeholder="enter your text here" class="textbox"></textarea>
     

@@ -5,6 +5,8 @@ body  {margin: 0px;}
     height: 80px;
     background-color: #be3144;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 nav a{
@@ -12,16 +14,16 @@ nav a{
     font-size: 25px;
     text-decoration: none;
     margin-right: 30px;
-  height: 59.5px;
-  display: inline-block;
-  
+    height: 59.5px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
 nav a:hover {
   
-    background-color:grey;
+    background-color:#45567d;
 }
 
 main{
@@ -51,7 +53,9 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     }
     /* css for gallery*/
 
-
+     #project {
+         background-color: #45567d;
+     }
     .gallery {
        
         height: auto;
@@ -70,20 +74,19 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         display: flex;
         justify-content: center;
         background-color: #627194;
-        padding-bottom: 30px;
-        padding-top: 10px;
+        padding-bottom: 60px;
+        padding-top: 140px;
         
     }
     
     .photos-title h1 {
-        font-size: 30px;
+        font-size: 2.8rem;
         color:white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-style: italic;
-        text-decoration-line: underline;
+        font-family: 'Raleway', sans-serif;
+        border-bottom: 0.2rem solid white;
         text-align: center;
-        text-decoration: bold;
         margin: 0%;
+        
     }
     
      
@@ -93,18 +96,20 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     
    
     
-    .gallery img {
+    .gallery img {background-color: rgb(68, 66, 66);
         margin-right: 50px;
-        width: 300px;
+        width: 400px;
         height: 300px;
         margin-bottom: 0px;
         margin-top: 10px;
     }
- 
+     .image-caption {
+         background-color: #627194;
+     }
     
     .image-caption p{
         margin: 0px;
-        width: 300px;
+        width: 400px;
         height: 54px;
         background-color:rgb(68, 66, 66);
         
@@ -115,7 +120,7 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         text-decoration: bold;
         color: white;
         text-align: center;
-        padding-top: 10px;}
+        padding-top: 20px;}
         .show1 {
             color: rgb(68, 67, 67);
             transition: color .5s ease-in-out;    
@@ -138,12 +143,12 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         background-color: black;
         color: white;
         padding: 15px;
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin-top: 70px;
+        margin-bottom: 120px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
         text-decoration: none;
-        border-radius: 15px;
+        border-radius: 2px;
     }
     .button a:hover {
         background-color: rgb(214, 20, 20);
@@ -155,7 +160,9 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     }
     .foot {flex-direction: column;
         display: flex;
-        height: 300px;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 80px;
         margin: 0;
         background-color: rgb(41, 41, 41);
         justify-content: center;
@@ -167,9 +174,9 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     }
     
     .foot .contact-greet {
-        margin-top: 50px;
+        margin-top: 150px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 40px;
+        font-size: 3rem;
         font-weight: bold;
         color: white;
     }
@@ -184,23 +191,13 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         margin-bottom: 100px;
     }
     
-    .foot .social-media {
-        display: flex;
-        width: 100%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 10px;
-        color: white;
-        justify-content: center;
-    }
-    
-    .foot table {
-        margin-top: 40px;
-    }
+
     
     .foot table td{
         padding: 20px;
+        padding-top: 100px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;
+        font-size: 30px;
         color: white;
         align-items: center;    
     }
@@ -214,14 +211,14 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     
     .facebook:hover{
         color: white;
-        transition: padding .5s ease-in-out;
+        transition: padding .3s ease-in-out;
         padding-top: 40px;
         padding-bottom: 0;
     }
     
     .github:hover{
         color: white;
-        transition: padding .5s ease-in-out;
+        transition: padding .3s ease-in-out;
         padding-top: 40px;
         padding-bottom: 0;
     }
@@ -229,20 +226,20 @@ background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 
     .twitter:hover{
         color: white;
-        transition: padding .5s ease-in-out;
+        transition: padding .3s ease-in-out;
         padding-top: 40px;
         padding-bottom: 0;
     }  
     .email:hover{
         color: white;
-        transition: padding .5s ease-in-out;
+        transition: padding .3s ease-in-out;
         padding-top: 40px;
         padding-bottom: 0;
     }
  
     .call:hover{
         color: white;
-        transition: padding .5s ease-in-out;
+        transition: padding .3s ease-in-out;
         padding-top: 40px;
         padding-bottom: 0;
     }
