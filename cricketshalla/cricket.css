@@ -45,7 +45,7 @@ nav a {
     font-size: larger;
 }
 button {
-    width: 250px;
+    width: 190px;
     height: 40px;
     background-color: rgba(255, 8, 0, 0.911);
     color: white;
@@ -106,4 +106,10 @@ color: #202020;}
     font-size: 17px;
     word-spacing: 2px;
 }
+.gallery .social-icon {
+    color: #CCCCCE;
+}
+.gallery a {
+    color: #CCCCCE;
+    padding-left: 10px;
 }
