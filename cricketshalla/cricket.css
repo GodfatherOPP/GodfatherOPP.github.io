@@ -13,6 +13,7 @@ padding-bottom: -2px;
 padding-top: 15px;
 padding-bottom: -2px;
 padding-right:25px ;
+font-family: Quicksand, Tahoma, Arial
 }
 nav a {
     padding: 20px;
@@ -30,9 +31,11 @@ nav a {
 .section1 h1 {font-size: 37px;
     padding-top: 80px;
     margin-top: 5px;
+    font-family: Raleway, Arial, Helvetica;
 }
 .section1 h3 {
     font-size: 28px;
+    font-family: Raleway, Arial, Helvetica;
 }
 .section1 .email {
     padding-top: 35px;
@@ -46,7 +49,7 @@ nav a {
 }
 button {
     width: 190px;
-    height: 40px;
+    height: 45px;
     background-color: rgba(255, 8, 0, 0.911);
     color: white;
     border: none;
@@ -61,9 +64,9 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.images {
+.images {object-fit: cover;
     width: 400px;
-    height: auto;
+  
     background-color: white;
     margin-left: 10px;
     margin-bottom: 20px;
@@ -71,9 +74,10 @@ button {
     padding: 20px;
 }
 h4 {font-family: Quicksand, Tahoma, Arial;
+    font-weight: normal;
+line-height: 1.4;
 text-size-adjust: 5px;
 font-size: 27px;
-font-weight: initial;
 color: #202020;}
 .section3 {
     background-color: rgb(15, 15, 15);
@@ -101,10 +105,12 @@ color: #202020;}
 }
 .posted {
     color: gray;
+    font-family: Raleway, Arial, Helvetica;
 }
 .description {
     font-size: 17px;
     word-spacing: 2px;
+    font-family: Raleway, Arial, Helvetica;
 }
 .gallery .social-icon {
     color: #CCCCCE;
@@ -112,4 +118,7 @@ color: #202020;}
 .gallery a {
     color: #CCCCCE;
     padding-left: 10px;
+}
+@media (max-width:500px) {
+    
 }
