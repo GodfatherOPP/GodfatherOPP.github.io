@@ -129,3 +129,138 @@ color: #202020;}
 @media (max-width:500px) {
     
 }
+ /*@media only screen and (max-width: 600px) {
+    .md{
+        width: 830px;
+    }   
+    .text{
+        height: 700px;
+
+
+    }
+
+    .logo{
+        padding-left: 220px;
+        padding-bottom:80px;
+    }
+
+    .lo{
+        height: 55px;
+    }
+
+    .na{
+        padding-right: 90px;
+        
+    }
+
+    h1{
+       font-size: 50px;
+       padding-left: 100px;
+       padding-right: 120px;
+    }
+
+    h3{
+        font-size: 40px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 15px;
+    }
+
+    .ad{
+        display: grid;
+    }
+
+    .email{
+        margin-left: 180px;
+        margin-right: 170px;
+    }
+
+    .bt{
+        margin-top: 25px;
+    }
+
+    .non{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .ad img{
+        width: 750px;
+        height: 400px;
+    }
+
+    .no{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .n{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 5px;
+    }
+
+    .q{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .w{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .e{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .r{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .t{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .y{
+        width: 750px;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+
+    .b a{
+        padding-left: 60px;
+        font-size: 19px;
+        
+    }
+
+    h4{
+        font-size: 40px;
+    }
+
+    h6{
+        font-size: 25px;
+    }
+
+    span{
+        font-size: 27px;
+        font-weight: lighter;
+        font-family: var(--text-font);
+        line-height: 1.75;
+    }
+
+    .na a {
+        font-size: 24px;
+    }
+
+}

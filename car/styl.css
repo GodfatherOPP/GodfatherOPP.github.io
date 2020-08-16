@@ -1,0 +1,76 @@
+.body {
+    width: 300px;
+    height: 119px;
+    border-radius: 60px 70px 20px 20px;
+    background-color: red;
+    margin: 300px;
+    position: absolute;
+    animation: 4s go linear 1;
+}
+.top {
+    width: 215px;
+    height: 70px;
+    border: 10px solid red;
+    background: black;
+    margin: -77px;
+    margin-left: 34px;
+    position: absolute;
+    border-radius: 100% 1000% 0 0;
+}
+.top:after {
+    content: '';
+    width: 99px;
+    height: 53px;
+    margin: 4px;
+    margin-left: 103px;
+    position: absolute;
+    border: 10px solid red;
+    border-radius: 10% 800% 0 0;
+    background:black;
+}
+.headlight {
+    width: 25px;
+    height: 42px;
+    border-radius: 100%;
+    background: yellow;
+    margin-left: 271px;
+    margin-top: -116px;
+    animation: 2s glow 1;
+}
+.wheel1 {
+    width: 50px;
+    height: 50px;
+    background: #868b86;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.wheel2 {
+    width: 50px;
+    height: 50px;
+    background: #868b86;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 195px;
+}
+.inner {
+    width: 15px;
+    height: 15px;
+    border: 10px dotted #c6d1c6;
+    border-radius: 100%;
+    position: absolute;
+    margin: 7px;
+    animation: .8s spin linear 5;
+}
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes go {
+    0%{transform: translate(0,0);}
+    100%{transform: translate(1000px,0);}
+}
+
