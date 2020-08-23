@@ -279,6 +279,7 @@ hr {
   .flex-container {
     height: auto;
     width: 375px;
+    position: unset;
   }
   .navigatiion a {
     display: block;

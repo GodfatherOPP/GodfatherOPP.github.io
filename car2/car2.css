@@ -1,0 +1,12 @@
+section {
+    text-align: center;
+}
+.body {
+    background-color: aquamarine;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    border-radius: 100px;
+left: 500px;
+top: 300px;
+}
