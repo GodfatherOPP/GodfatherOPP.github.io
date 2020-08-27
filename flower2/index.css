@@ -1,0 +1,164 @@
+
+.top1 {
+    width: 280px;
+    height: 100px;
+    background-color: rgb(122, 78, 226);
+    border-radius: 50px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.top2 {
+    width: 280px;
+    height: 100px;
+    background-color: rgb(122, 78, 226);
+    transform: rotate(123deg);
+    border-radius: 50px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.top3 {
+    width: 280px;
+    height: 100px;
+    background-color: rgb(122, 78, 226);
+    transform: rotate(63deg);
+    border-radius: 50px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+.eye-1 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    left: 583px;
+    top: 314px;
+}
+.eye-2 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    left: 661px;
+    top: 314px;
+}
+.eye-inner-1 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    left: 593px;
+    top: 325px;
+}
+.eye-inner-2 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    left: 670px;
+    top: 325px;
+}
+.mouth {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(224, 110, 90);
+    position: absolute;
+    left: 620px;
+    top: 373px;
+}
+.steam {
+    height: 350px;
+    width: 30px;
+    background-color: rgb(46, 226, 124);
+    position: absolute;
+    left: 618px;
+    top: 450px;
+}
+.leaf-left {
+    width: 105px;
+    height: 81px;
+    background-color: rgb(54, 209, 132);
+    position: absolute;
+    left: 513px;
+    top: 582px;
+    border-radius: 1000% 1000% 0% 1000%;
+}
+.leaf-right {
+    width: 105px;
+    height: 81px;
+    background-color: rgb(54, 209, 132);
+    border-radius: 1000% 1000% 1000% 0%;
+    position: absolute;
+    left: 648px;
+    top: 597px;
+}
+
+.leaf-left-inner {
+    width: 67px;
+    height: 60px;
+    background-color: seagreen;
+    border-radius: 1000% 1000% 0% 1000%;
+    position: absolute;
+    left: 542px;
+    top: 602px;
+}
+.leaf-right-inner {
+    width: 67px;
+    height: 60px;
+    background-color: seagreen;
+    border-radius: 1000% 1000% 1000% 0%;
+    position: absolute;
+    left: 656px;
+    top: 617px;
+} 
+.pot1 {
+    background: rgb(170, 44, 44);
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 530px;
+    top: 795px;
+}
+.pot2 {
+    background: #d66f51;
+    width: 160px;
+    height: 30px;
+    position: absolute;
+    left: 550px;
+    top: 835px;
+}
+.pot3 {
+    background: rgb(170, 44, 44);
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 555px;
+    top: 865px;
+}
+.pot-leftside {
+    height: 130px;
+    width: 20px;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 542px;
+    top: 838px;
+    background: white;
+}
+.pot-rightside {
+    height: 130px;
+    width: 20px;
+    transform: rotate(10deg);
+    position: absolute;
+    left: 698px;
+    top: 838px;
+    background: white;
+}

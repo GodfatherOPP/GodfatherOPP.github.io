@@ -207,14 +207,14 @@ main {
 }
 
 .social-media .social-contact .facebook:hover {
-  color: white;
+  
   transition: padding 0.3s ease-in-out;
   padding-top: 40px;
   padding-bottom: 0;
 }
 
 .social-media .social-contact .github:hover {
-  color: white;
+ 
   transition: padding 0.3s ease-in-out;
   padding-top: 40px;
   padding-bottom: 0;
@@ -272,13 +272,13 @@ hr {
   color: white;
   text-align: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 515px) {
   body {
     width: 100%;
   }
   .flex-container {
     height: auto;
-    width: 375px;
+    width: auto;
     position: unset;
   }
   .navigatiion a {
@@ -300,5 +300,20 @@ hr {
   }
   .foot .social-contact {
     display: block;
+  }
+  .social-media .social-contact .facebook:hover {
+    transition: none;
+  }
+  .social-media .social-contact .github:hover {
+    transition: none;
+  }
+  .social-media .social-contact .Instagram:hover {
+    transition: none;
+  }
+  .social-media .social-contact .Instagram:hover {
+    transition: none;
+  }
+  .social-media .social-contact  .call:hover {
+    transition: none;
   }
 }
