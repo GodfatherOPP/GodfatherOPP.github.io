@@ -3,7 +3,7 @@ padding: 0;}
 .head { font-family: Okra,Helvetica,sans-serif;
     object-fit: fill;
     background-repeat: repeat;
-    background-image: url("/home/harsh/gittest/GodfatherOPP.github.io/zomato/food.jpeg");
+    background-image: url("food.jpeg");
     height: 600px;
     width: 100%;
 }
