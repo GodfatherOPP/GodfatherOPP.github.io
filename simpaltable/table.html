@@ -2,9 +2,88 @@
 <HTML>
     <head>
         <link rel="stylesheet" href="table.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
     </head>
     <body>
+      <div class="title">
+       <div class="logo"> 
+         <img src="logo.JPG">
+         <div class="logo-name">
+          <h5>XYZ</h5>
+          <h6>Software</h6>
+         </div>
+       </div>
+       <div class="notification">
+        <i class="fa fa-bell" data-count="5"></i>
+        <div class="user">
+          <i class="fa fa-user"></i>
+          <span>Saloni Jain</span>
+        </div>
+       </div>
+      </div>
+<div class="Table">
+  <div class="top">
 
+  </div>
+    <div class="header">
+       <div class="heading">
+         <div class="circle"><i class="fa fa-minus"></i></div>
+         <span> Challan & Deductions</span>
+       </div>
+       <div class="heading">
+        <div class="circle"><i class="fa fa-rupee"></i></div>
+        <span>  TDS Computation</span>
+      </div>
+      <div class="heading">
+        <div class="circle"><i class="fa fa-info"></i></div>
+        <span> FVU Generation </span>
+      </div>
+      <div class="heading">
+        <div class="circle"><i class="fa fa-file"></i></div>
+        <span> eTDS Filling </span>
+      </div>
+      <div class="Return-Overview"><a href="#">Return Overview</a></div>
+    </div>
+<div class="middle">
+<h4>FVU Generation </h4>
+<table>
+  <tr>
+    <th>Section/Record Type</th>
+    <th>Field Name</th>
+    <th>Error type</th>
+    <th>Error Code & Description</th>
+    <th>View & fix Error</th>
+  </tr>
+  <tr>
+<td>Challan</td>
+<td>Bank Challan number </td>
+<td class="error1">Error as per FVU</td>
+<td>Challan number 12345 is not valid</td>
+<td><i class="fa fa-eye"></i></td>
+  </tr>
+  <tr>
+    <td>Deducted</td>
+    <td>PAN</td>
+    <td class="error2">Software warning</td>
+    <td>Unverified PAN information</td>
+    <td><i class="fa fa-eye"></i></td>
+      </tr>
+      <tr>
+        <td>Challan</td>
+        <td>Bank Challan Number</td>
+        <td class="error2">Software warning</td>
+        <td>Unverified Challan details available</td>
+        <td><i class="fa fa-eye"></i></td>
+          </tr>
+</table>
+</div>
+<div class="foot">
+   <Div><button>Validate Again</button></Div>
+   <Div><button>Download FUV File</button></Div>
+   <Div><button>Proceed to eTDS File</button></Div>
+</div>
+</div>
         
     </body>
 </HTML>
