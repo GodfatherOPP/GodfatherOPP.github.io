@@ -72,6 +72,9 @@ nav a {
     border-radius: 8px;
     padding-bottom: 20px;
 }
+.show1 a {
+    text-decoration: none;
+}
 .image1 {
     width: 250px;
     height: auto;

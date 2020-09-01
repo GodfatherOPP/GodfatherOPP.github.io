@@ -291,6 +291,10 @@ hr {
   .navigatiion a {
     display: block;
   }
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+  }
   .flex-main h1 {
     text-align: center;
   }

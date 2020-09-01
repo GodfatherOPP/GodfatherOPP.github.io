@@ -21,7 +21,12 @@
                 icon.classList.remove("fa-bars");
                 icon.classList.add("fa-close");
             }
-            logo.style.display = "none";
+           if(logo.style.display == "none") {
+               logo.style.display = "block";
+           }
+           else{
+            logo.style.display = "none"
+           }
         }
     </script>
 </head>
