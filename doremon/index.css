@@ -335,37 +335,37 @@ left: 294px;
     left: 8px;
 }
 .left-leg {
-    width: 30px;
+    width: 35px;
     height: 20px;
     position: absolute;
-    top: 394px;
+    top: 390px;
     left: 293px;
     background: #0da9d8;
 
 }
 .left-foot {
-    width: 35px;
-    height: 22px;
+    width: 39px;
+    height: 26px;
     position: absolute;
-    top: 402px;
+    top: 400px;
     left: 289px;
     border: 2px solid black;
     border-radius: 50%;
     background: white;
 }
 .right-leg {
-    width: 30px;
+    width: 32px;
     height: 20px;
     position: absolute;
-    top: 394px;
-    left: 341px;
+    top: 390px;
+    left: 339px;
     background: #0da9d8;
 }
 .right-foot {
-    width: 35px;
-    height: 22px;
+    width: 39px;
+    height: 26px;
     position: absolute;
-    top: 402px;
+    top: 400px;
     left: 336px;
     border: 2px solid black;
     border-radius: 45%;
