@@ -305,7 +305,44 @@ justify-content: space-around;
 .mobile-table {
     display: none;
 }
-  @media (max-width: 700px) {
+/* Customise radio button */
+.custom-radio {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: white;
+}
+input:checked ~ .custom-radio::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: purple;
+    border-radius: 100%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.custom-box {
+    position: relative;
+}
+input:checked ~ .custom-radio{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid purple;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: white;
+}
+@media (max-width: 700px) {
     .head-navigation {
         padding-left: 20px;
     padding-right: 5px;
