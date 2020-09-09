@@ -25,6 +25,7 @@ header {
 }
 .searchbar input {
     height: 50px;
+    width: 100%;
 }
 .box {
     display: flex;
@@ -34,8 +35,9 @@ header {
 .box img {
     width: 90px;
     object-fit: cover;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
+    border-radius: 15px;
 }
 .box .text {
     padding-left: 15px;
@@ -72,7 +74,7 @@ header {
     margin-bottom: 15;
     padding-bottom: 8;
 }
-}
+
 .card .offer-zone {
     background: #f2f9f5;
     width: 80%;
@@ -133,5 +135,4 @@ padding: 5%;
     border: none;
     border-radius: 5px;
     margin-left: 5%;
-}
 }

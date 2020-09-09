@@ -4,6 +4,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<meta content="width=device-width, initial-scale=1" name="viewport" />  
+<script>
+  function shownavigation(){
+    var links = document.querySelector(".navigation .pc-nav");
+    // var icon = document.querySelector(".icon i");
+    if (links.style.display == "none") {
+      links.style.display = "block";
+    }else{
+      links.style.display == "none";
+    }
+  }
+</script>
 </head>
 <body>
 <header>
@@ -11,12 +23,15 @@
         <img src="https://www.cricketshala.com/wp-content/uploads/2018/11/CricketShala-Logo-Final-Transparent-swooz-258.png" class="custom-logo" alt="CricketShala" width="258" height="39">
     </div>
     <div class="navigation">
-        <nav>
+        <nav class="pc-nav">
             <a href="#">Home</a>
             <a href="#">Tips & tatics</a>
             <a href="#">Product review</a>
             <a href="#">Interview & Bio</a>
         </nav>
+        <nav class="icon">
+          <i class="fa fa-bars" onclick="shownavigation()"> Menu</i>
+      </nav>
     </div>
 </header>
 <div class="section1">
@@ -32,8 +47,7 @@
 <div class="gallery-background">
     <div class="gallery">
       <div class="images">
-          <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/12/cricket-spikes-shoes-1360x765.jpg" 
-            style="width:369px;"></a>
+          <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/12/cricket-spikes-shoes-1360x765.jpg"></a>
           <h4>Cricket spikes shoes – Best rubber and metal spikes collections in 2019</h4>
           <p class="posted">Posted on December 9, 2018 by Rakesh</p>
           <p class="description">What you look when you go to buy your cricket spikes shoes? Well, I feel many of the players especially</p>
@@ -43,8 +57,7 @@
           <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
       </div>
       <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/11/spektacom-sticker-sensor-2.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/11/spektacom-sticker-sensor-2.png"></a>
         <h4>Spektakom power bat sticker – Anil Kumble & Microsoft are making a smart cricket bat sticker</h4>
         <p class="posted">Posted on November 21, 2018 by Rakesh</p>
         <p class="description">Anil Kumble – he is a former Indian cricketer and captain of test and ODI team. He is the third</p>
@@ -54,8 +67,7 @@
         <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/11/featured-image1.png" 
-          style="width:369px; "></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/11/featured-image1.png"></a>
         <h4>How to convince your parents to allow you to play cricket</h4>
         <p class="posted">Posted on November 8, 2018 by Rakesh</p>
         <p class="description">You look dream every day and night to become a cricketer, but your parent doesn’t allow you to play, they</p>
@@ -65,8 +77,7 @@
         <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div><br>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/10/prithvi-journey-collage.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/10/prithvi-journey-collage.png"></a>
         <h4>Prithvi Shaw biography – All about him from childhood to international cricket</h4>
         <p class="posted">Posted on October 23, 2018 by Rakesh</p>
         <p class="description">In a nation of 1.3 billion people, you will hardly find an individual, who does not watch or support cricket.</p>
@@ -76,19 +87,17 @@
         <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-to-become-cricketer.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-to-become-cricketer.png"></a>
         <h4>How to become cricketer in India – a proven strategy</h4>
         <p class="posted">Posted on September 24, 2018 by Rakesh</p>
-        <p class="description">Do you have a DREAM to become a cricketer? Are you a parent like me who looks DREAM for kids</p>
+        <p class="description">Do you have a DREAM to become a cricketer? Are you a parent like me who looks DREA for kids</p>
         <button>continue reading</button>
         <hr>
         <span class="icon"><i class="fa fa-folder"></i><a href="#">Biography</a></span><br>
         <span class="icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-care-cricket-bat.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-care-cricket-bat.png"></a>
         <h4>Cricket bat knocking – How to knock in & oiling of a cricket bat</h4>
         <p class="posted">Posted on September 4, 2018 by Rakesh</p>
         <p class="description">A bat is your most priceless cricket gear, isn’t it? When you went to buy a bat, You should have</p>
@@ -98,8 +107,7 @@
         <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div><br>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/prateek-1.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/prateek-1.png"></a>
         <h4>Interview with Prateek Satpute – Who left top MNC job to live his passion about cricket and blogging</h4>
         <p class="posted">Posted on August 29, 2018 by Rakesh</p>
         <p class="description">If you are a cricket lover and want to be updated with the latest stories of the cricket, Prateek’s blog</p>
@@ -109,8 +117,7 @@
         <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/ultimate-guide-to-buy-cricket-bat.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/ultimate-guide-to-buy-cricket-bat.png"></a>
         <h4>Ultimate guide to buy cricket bat in 2018</h4>
         <p class="posted">Posted on August 16, 2018 by Rakesh</p>
         <p class="description">What things do you look when you buy a bat? You go to the shop near to you, ask the</p>
@@ -120,8 +127,7 @@
         <span class="social-icon"><i class="fa fa-envelope"></i><a href="#">Leave a comment</a></span>
     </div>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/cricket-batting-tips.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/cricket-batting-tips.png"></a>
         <h4>Cricket batting tips – learn batting skills in cricket</h4>
         <p class="posted">Posted on August 9, 2018 by Rakesh</p>
         <p class="description">I love cricket and my son too. My 9-year-old son goes to the cricket academy for practice and sometimes me</p>
@@ -133,8 +139,7 @@
     </div>
     </div><br>
     <div class="images">
-        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/%E2%80%9CFind-the-Best-Cricket-Bat-for-the-Leather-Ball-in-2018%E2%80%9D.png" 
-          style="width:369px;"></a>
+        <a href="#"><img src="https://www.cricketshala.com/wp-content/uploads/2018/08/%E2%80%9CFind-the-Best-Cricket-Bat-for-the-Leather-Ball-in-2018%E2%80%9D.png"></a>
         <h4>Best cricket bat for the leather ball in 2018</h4>
         <p class="posted">Posted on August 4, 2018 by Rakesh</p>
         <p class="description">Selecting the bat was always a big hassle for me, assuming same for your either. There are a lot of</p>

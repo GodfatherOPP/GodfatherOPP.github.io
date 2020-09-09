@@ -330,6 +330,7 @@ input:checked ~ .custom-radio::before {
 }
 .custom-box {
     position: relative;
+    margin-right: 10px;
 }
 input:checked ~ .custom-radio{
     display: block;
@@ -341,6 +342,9 @@ input:checked ~ .custom-radio{
     top: 25px;
     left: 0px;
     background-color: white;
+}
+.custom-container {
+    display: flex;
 }
 @media (max-width: 700px) {
     .head-navigation {

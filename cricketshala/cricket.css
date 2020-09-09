@@ -17,6 +17,9 @@ font-family: Quicksand, Tahoma, Arial;
 text-align: center;
 
 }
+.navigation .pc-nav {
+    display: block;
+}
 nav a {
     padding: 20px;
     padding-top: 10px;
@@ -28,7 +31,7 @@ nav a {
 }
 .section1 {background-color: #007BD5;;
     text-align: center;
-    height: 380px;
+    height: auto;
     color: white;
     font-family: Raleway, Arial, Helvetica;
     letter-spacing: 1px;
@@ -80,6 +83,10 @@ button {
     margin-top: 30px;
     padding: 20px;
 }
+.images img {
+    width: 100%;
+   object-fit: cover;
+}
 h4 {font-family: Quicksand, Tahoma, Arial;
     font-weight: normal;
 line-height: 1.4;
@@ -126,141 +133,69 @@ color: #202020;}
     color: #CCCCCE;
     padding-left: 10px;
 }
-@media (max-width:500px) {
-    
+/* Hamburger */
+.icon {
+    display: none;
 }
- /*@media only screen and (max-width: 600px) {
-    .md{
-        width: 830px;
-    }   
-    .text{
-        height: 700px;
-
-
-    }
-
-    .logo{
-        padding-left: 220px;
-        padding-bottom:80px;
-    }
-
-    .lo{
-        height: 55px;
-    }
-
-    .na{
-        padding-right: 90px;
-        
-    }
-
-    h1{
-       font-size: 50px;
-       padding-left: 100px;
-       padding-right: 120px;
-    }
-
-    h3{
-        font-size: 40px;
-        padding-left: 150px;
-        padding-right: 150px;
+@media (max-width:500px) {
+    .section1 h1 {
+        font-size: 27px;
+        padding-top: 25px;
+        margin-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    .section1 h3 {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 15px;
     }
-
-    .ad{
-        display: grid;
+    .section1 .email {
+        padding-top: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
-    .email{
-        margin-left: 180px;
-        margin-right: 170px;
+    .emailbar {
+        width: 90%;
+        padding-left: 5px;
+        margin-bottom: 24px;
     }
-
-    .bt{
-        margin-top: 25px;
+    button {
+        width: 60%;
+        height: 45px;
+        margin-bottom: 66px;
     }
-
-    .non{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
+    .navigation .pc-nav {
+        display: none;
     }
-
-    .ad img{
-        width: 750px;
-        height: 400px;
+    .images {
+           width: 80%;
+          margin-left: auto;
+          margin-right: auto;
     }
-
-    .no{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
+    .gallery {
+        justify-content: center;
     }
-
-    .n{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 5px;
+    .footer-nav a {
+margin-right: 25px;
     }
-
-    .q{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
+    nav a {
+        padding: 0px;
     }
-
-    .w{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
+    .icon {
+        display: block;
     }
-
-    .e{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
-    }
-
-    .r{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
-    }
-
-    .t{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
-    }
-
-    .y{
-        width: 750px;
-        height: 800px;
-        margin-bottom: 30px;
-    }
-
-    .b a{
-        padding-left: 60px;
-        font-size: 19px;
-        
-    }
-
-    h4{
-        font-size: 40px;
-    }
-
-    h6{
-        font-size: 25px;
-    }
-
-    span{
-        font-size: 27px;
-        font-weight: lighter;
-        font-family: var(--text-font);
-        line-height: 1.75;
-    }
-
-    .na a {
-        font-size: 24px;
-    }
-
+      .icon .fa-bars {
+        position: absolute;
+        left: 37%;
+        top: 10%;
+        background: #007bd5;
+        font-size: 21px;
+        padding: 6px;
+        color: white;
+      }
+      .logo {
+          margin-bottom: 40px;
+      }
 }

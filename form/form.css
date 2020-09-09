@@ -67,6 +67,7 @@
     .feedback {
         display: flex;
         flex-direction: column;
+        /* position: absolute; */
     }
     .lable {
         margin-bottom: 1rem;
@@ -100,7 +101,8 @@
     top: 3px;
     left: 5px;
     background-color: white;
-}
+} 
+
 input:checked ~ .custom-radio::before {
     content: "";
     display: block;
@@ -115,19 +117,54 @@ input:checked ~ .custom-radio::before {
 .custom-box {
     position: relative;
 }
-input:checked ~ .custom-radio{
-    display: block;
+/* custom-checkbox */
+.custom-container {
+    display: flex;
+}
+.custom-checkbox {
     width: 15px;
     height: 15px;
-    border: 1px solid purple;
-    border-radius: 100%;
-    position: absolute;
-    top: 25px;
-    left: 0px;
-    background-color: white;
+    border: 2px solid red;
+    border-radius: 10%;
+    /* position: absolute;
+    top: 3px;
+    left: 4px; */
+    /* background: white; */
+    display: block;
+}
+input:checked ~ .custom-checkbox {
+    border: 2px solid indigo;
+    display: block;
+}
+input:checked ~ .custom-checkbox::after{
+    content: "*";
+    width: 10px;
+    height: 10px;
+   color: yellow;
+   position: absolute;
+   top: 24px;
+   left: 4px;
+}
+.tickmark {
+    position: relative;
 }
         @media (max-width:600px){
-            form{
+            body{
+                width: 90%;
+            }
+            .body{
+                width: 90%;
+            }
+            .inputbox {
+                width: 100%;
+            }
+            .textbox {
+                width: 100%;
+            }
+            .feature {
+                width: 100%;
+            }
+            .submit-button {
                 width: 100%;
             }
         }

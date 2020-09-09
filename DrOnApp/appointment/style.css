@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: #f7f7f7;
+    font-family: 'Public Sans', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+} 
+header .logo {
+    margin-left: 8%;
+}
+header .language {
+margin-right: 8%;
+border:2px solid #772386;
+border-radius: 8px;
+padding: 5px;
+}
+.box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 82px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.name p {
+font-size: 18px;
+color: gray;
+}
+.name h3 {
+    font-size: 30px;
+    font-weight: 800;
+}
+.image {
+    width: 100px;
+    object-fit: cover;
+}
+.mode {
+    padding-top: 10px;
+}
+.mode p {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.mode-container {
+    display: flex;
+}
+.mode-box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 2px 1px 10px rgb(228, 226, 226);    
+    margin-right: 10px;
+}
+.mode-box:hover {
+    border: 2px solid yellow;
+}
+.mode-image {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.mode-name {
+    font-size: 14px;
+}
+.date-sheet {
+    width: 80%;
+    margin-left: 10%;
+}
+.date-sheet p {
+    font-size: 15px;
+    color: grey;
+    padding: 5px;
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+.date-sheet .calender {
+    width: 100%;
+    height: 40px;
+
+}
+.sheet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.date {
+    width: 150px;
+    color: indigo;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 19px;
+}
+.patient {
+    width: 100%;
+    background-color: #cccccc;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+@media (max-width:500px){
+    header .logo {
+        margin-left: 3%;
+    }
+    header .language {
+        margin-right: 3%;
+    }
+    .name p {
+        font-size: 13px;
+    }
+    .name h3 {
+        font-size: 22px;
+    }
+    .sheet {
+        justify-content: center;
+    }
+}
