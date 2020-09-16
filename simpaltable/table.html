@@ -4,6 +4,17 @@
         <link rel="stylesheet" href="table.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta content="width=device-width, initial-scale=1" name="viewport">
+        <script>
+
+         function showchallan(){
+           var challan = document.querySelector(".challan");
+           if (links.style.display == "none" || links.style.display == "") {
+      links.style.display = "flex";
+    }else{
+      links.style.display = "none";
+    }
+  }
+        </script>
     </head>
     <body>
       <div class="title">
@@ -24,12 +35,11 @@
       </div>
 <div class="Table">
   <div class="top">
-
   </div>
     <div class="header">
        <div class="heading">
          <div class="circle"><i class="fa fa-minus"></i></div>
-         <span> Challan & Deductions</span>
+         <span onclick="showchallan()" class="challan"> Challan & Deductions</span>
        </div>
        <div class="heading">
         <div class="circle"><i class="fa fa-rupee"></i></div>

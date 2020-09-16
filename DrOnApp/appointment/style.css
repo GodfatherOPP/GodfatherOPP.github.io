@@ -13,9 +13,11 @@ header {
     position: fixed;
     width: 100%;
     background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 header .logo {
     margin-left: 8%;
+    height: 40px;
 }
 header .language {
 margin-right: 8%;
@@ -73,6 +75,16 @@ color: gray;
     height: 50px;
     margin-top: 30px;
     margin-left: 25px;
+}
+.fa-video-camera::before {
+    content: "\f03d";
+    font-size: 30px;
+    color: gray;
+}
+.fa-phone::before {
+    content: "\f03d";
+    font-size: 30px;
+    color: gray;
 }
 .mode-name {
     font-size: 14px;

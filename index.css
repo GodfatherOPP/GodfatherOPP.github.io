@@ -236,12 +236,18 @@ main {
   padding-bottom: 0;
 }
 
-.social-media .social-contact  .call:hover {
-  color: white;
+.social-media .social-contact .codepen:hover {
+  
   transition: padding 0.3s ease-in-out;
   padding-top: 40px;
   padding-bottom: 0;
 }
+/* .social-media .social-contact  .call:hover {
+  color: white;
+  transition: padding 0.3s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 0;
+} */
 
 .foot .social-media img {
   height: 15px;
@@ -324,9 +330,12 @@ hr {
   .social-media .social-contact .Instagram:hover {
     transition: none;
   }
-  .social-media .social-contact  .call:hover {
+  .social-media .social-contact .codepen:hover {
     transition: none;
   }
+  /* .social-media .social-contact  .call:hover {
+    transition: none;
+  } */
   .gallery {
     justify-content: center;
     padding-right: auto;

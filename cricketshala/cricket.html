@@ -8,11 +8,10 @@
 <script>
   function shownavigation(){
     var links = document.querySelector(".navigation .pc-nav");
-    // var icon = document.querySelector(".icon i");
-    if (links.style.display == "none") {
-      links.style.display = "block";
+    if (links.style.display == "none" || links.style.display == "") {
+      links.style.display = "flex";
     }else{
-      links.style.display == "none";
+      links.style.display = "none";
     }
   }
 </script>

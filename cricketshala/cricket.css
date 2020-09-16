@@ -35,7 +35,7 @@ nav a {
     color: white;
     font-family: Raleway, Arial, Helvetica;
     letter-spacing: 1px;
-   
+    padding-bottom: 30px;
 }
 .section1 h1 {font-size: 37px;
     padding-top: 80px;
@@ -48,6 +48,7 @@ nav a {
 }
 .section1 .email {
     padding-top: 35px;
+    padding-bottom: 40px;
 }
 .emailbar {
     width: 400px;
@@ -137,7 +138,7 @@ color: #202020;}
 .icon {
     display: none;
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
     .section1 h1 {
         font-size: 27px;
         padding-top: 25px;
@@ -166,9 +167,24 @@ color: #202020;}
         height: 45px;
         margin-bottom: 66px;
     }
+
+    header {
+        display: block;
+    }
+.navigation {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    font-family: Quicksand, Tahoma, Arial;
+    text-align: center;
+}
     .navigation .pc-nav {
         display: none;
-    }
+    flex-direction: column;
+    margin-top: 10px;   
+    margin-left: auto;
+    margin-right: auto;
+}
     .images {
            width: 80%;
           margin-left: auto;
@@ -196,6 +212,15 @@ margin-right: 25px;
         color: white;
       }
       .logo {
-          margin-bottom: 40px;
+          height: 80px;
       }
-}
+      .footer-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+      }
+      nav a {
+        padding: 5px;
+    }
+    }

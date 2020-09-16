@@ -126,24 +126,29 @@ input:checked ~ .custom-radio::before {
     height: 15px;
     border: 2px solid red;
     border-radius: 10%;
-    /* position: absolute;
+    position: absolute;
     top: 3px;
-    left: 4px; */
-    /* background: white; */
+    left: 4px; 
+    background: white;
     display: block;
 }
 input:checked ~ .custom-checkbox {
     border: 2px solid indigo;
     display: block;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    background-color: white;
 }
 input:checked ~ .custom-checkbox::after{
     content: "*";
-    width: 10px;
+    width: 23px;
     height: 10px;
-   color: yellow;
-   position: absolute;
-   top: 24px;
-   left: 4px;
+    color: black;
+    position: relative;
+    top: -7px;
+    left: 1px;
+    font-size: 28px;
 }
 .tickmark {
     position: relative;

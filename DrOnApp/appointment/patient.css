@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+header .logo {
+    margin-left: 8%;
+    height: 40px;
+}
+header .language {
+margin-right: 8%;
+border:2px solid #772386;
+border-radius: 8px;
+padding: 5px;
+}
+.info {
+    background-color: #ffffff;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+.box {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 82px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.detail {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #9d9d9d;
+}
+.patient-detail {
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    color: #6c757d;
+    font-size: 13px;
+}
+.detail-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+/* .detail-box .detail:hover    {
+    transition: margin 0.1s ease-out;
+    margin-top: 40px;
+  } */
+
+.name p {
+font-size: 18px;
+color: gray;
+}
+.name h3 {
+    font-size: 30px;
+    font-weight: 800;
+}
+.image {
+    width: 100px;
+    object-fit: cover;
+}
+      /* Customise radio button */
+      .custom-contsiner {
+          display: flex;
+          margin-bottom: 10px;
+      }
+      .custom-radio {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid pink;
+        border-radius: 100%;
+        position: absolute;
+        top: 0px;
+        left: -1px;
+        background-color: white;
+    } 
+    
+    input:checked ~ .custom-radio::before {
+        content: "";
+        display: block;
+        width: 11px;
+        height: 11px;
+        background-color: purple;
+        border-radius: 100%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+    .custom-box {
+        position: relative;
+        margin-right: 10px;
+    }
+    .agrement {
+        background-color: #ffffff;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .tick {
+        display: flex;
+    }
+    .condition {
+        margin-left: 20px;
+        color: #6c757d;
+    }
+    .policy {
+        margin-left: 40px;
+    }
+     button {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #cccccc;
+        padding: 15px;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .select {
+        color: #6c757d;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    a {
+        color: blueviolet;
+    }
+    .age {
+        border: none;
+    border-bottom: 1px solid #9d9d9d;
+    }
+   .select-birth {
+    border: none;
+    border-bottom: 1px solid #9d9d9d;
+   }
+   @media (max-width:600px){
+       .info {
+        width: 80%;
+       }
+       .agrement{
+        width: 80%;
+       }
+       .age {
+        width: 80px;
+        margin-right: 15px;
+       }
+   }
