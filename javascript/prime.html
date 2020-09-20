@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime Number</title>
+        <script>
+             var num = prompt("Enter Number");
+            isprime(num);
+            function isprime(num){
+                var i;
+                for( i=2; i<num; i++){
+                    if(num%i === 0){
+                        document.write("This " + num + " is not a prime number");
+                        return false;
+                    }else{
+                        document.write("This " + num + " is a prime number"); 
+                        return true;  
+                    }
+                }
+            }
+        </script>
+    </head>
+</html>
