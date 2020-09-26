@@ -134,3 +134,70 @@
     left: 2px;
     border: 2px solid black;
 }
+.book2 {
+    width: 52px;
+    height: 15px;
+    background-color: #fcd59c;
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    border: 2px solid black;
+}
+.book3 {
+        width: 52px;
+        height: 10px;
+        background-color: #dd8383;
+        position: absolute;
+        top: -11px;
+        left: 2px;
+        border: 2px solid black;
+}
+.apple{
+    position: absolute;
+    top: 408px;
+    left: 570px;
+}
+.apple-left {
+    height: 17px;
+  width: 18px;
+     /*  border: 1px solid black; */
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: -32px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+.apple-right {
+    height: 17px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    margin-top: -40px;
+    border-right-color: black;
+border-right-style: solid;
+border-bottom-style: solid;
+}
+.apple-leaf {
+    height: 14px;
+    width: 6px;
+    background-color: green;
+    position: absolute;
+    top: -38px;
+    left: 16px;
+    border-radius: 1000%;
+    transform: rotate(63deg);
+}
+.apple-steam {
+    height: 8px;
+    border: 2px solid rgb(41, 40, 40);
+    position: absolute;
+    top: -38px;
+    left: 7px;
+    transform: rotate(-31deg);
+}
