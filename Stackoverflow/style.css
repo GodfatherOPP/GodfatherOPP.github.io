@@ -1,20 +1,21 @@
 *{
     margin: 0;
-    font-family: 'Roboto Slab Bold',serif;
+    font-family: "Roboto Slab", serif;
 }
 header {
     /* position: fixed; */
     border-top: 2px solid #f48024;
     background-color: #fff;
     width: 100%;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 }
 .top {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .logo {
     margin-top: -8px;
@@ -22,19 +23,26 @@ header {
 .logo:hover{
     background-color: rgb(228, 228, 228);
 }
+.mobilelogo {
+    display: none;
+}
 .navigation a {
-border-radius: 14px;
-padding: 6px;
-margin-right: 10px;
-font-size: 13px;
-color: black;
-text-decoration: none;
+    border-radius: 14px;
+    padding: 5px 10px;
+    margin-right: 7px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 }
 .navigation a:hover {
     background-color: rgb(228, 228, 228);
 }
+.search-icon {
+    display: none;
+}
 .Search {
-    width: 510px;
+    width: 30%;
 }
 .search_here {
 width: 100%;
@@ -49,12 +57,13 @@ width: 100%;
     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.7);
     margin-right: 5px;
     height: 50%;
-padding: 3px;
-font-size: 13px;
+    padding: 7px;
+    font-size: 13px;
 }
 .join_us a {
     text-decoration: none;
     color: #39739d;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;   
 }
 .Sign_up {
     border: 1px solid #0095ff;
@@ -62,8 +71,8 @@ font-size: 13px;
     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
     margin-right: 5px;
     height: 50%;
-padding: 3px;
-font-size: 13px
+padding: 7px;
+font-size: 13px;
 }
 .Sign_up a {
     color: #fff;
@@ -80,8 +89,7 @@ height: 500px;
     left: 488px;
 }
 .block h1 {
-    font-size: 46px;
-    font-family: 'Roboto Slab Bold',serif;  
+    font-size: 50px;
     color: #242729;
 }
 .block p  {
@@ -91,6 +99,7 @@ height: 500px;
     margin-left: 90px;
     margin-top: 15px;
     text-align: center;
+    font-family: 'Source Sans Pro',sans-serif;  
 }
 .options {
         margin-left: 140px;
@@ -103,6 +112,7 @@ height: 500px;
     background-color: #fff;
     border: 1px solid #f6835a;
     padding: 10px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .for-business {
     background-color: #f6835a;
@@ -110,6 +120,7 @@ height: 500px;
     text-decoration: none;
     border: 1px solid #f6835a;
     padding: 10px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 /* For developers */
 
@@ -129,6 +140,7 @@ height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .developer p a {
     color: orange;
@@ -158,13 +170,14 @@ height: 500px;
     margin-bottom: 50px;
     padding-bottom: 15px;
     border-radius: 10px;
+    width: 30%;
 }
 .infobox:hover {
     box-shadow: 0 1px 3px rgba(0,0,0,0.09), 0 2px 6px rgba(0,0,0, 0.09), 0 3px 8px rgba(0,0,0,0.19);
 }
 .infobox p {
     padding: 20px;
-    width: 300px;
+    width: 80%;
     font-size: 14px;
     color: #242729;
     text-align: center;
@@ -172,6 +185,7 @@ height: 500px;
     margin-right: auto;
     margin-top: 10px;
     line-height: 1.5;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 
 .infobox h4 {
@@ -191,6 +205,7 @@ height: 500px;
 .button a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .public {
     margin-top: 70px;
@@ -218,6 +233,7 @@ height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .Business p a {
     color: orange;
@@ -232,7 +248,6 @@ height: 500px;
 }
 .box1 {
     background-color: #fff;
-    display: flex;
     margin-right: 50px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.09), 0 2px 6px rgba(0,0,0, 0.09), 0 3px 8px rgba(0,0,0,0.19);
     padding: 30px;
@@ -240,11 +255,12 @@ height: 500px;
     border-radius: 10px;
 }
 .text {
-    width: 57%;
+    width: 100%;
     font-size: 15px;
     margin-left: 20px;
     margin-top: 7px;
     line-height: 1.3;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .text span {
     color: #f99b2a;
@@ -267,6 +283,7 @@ height: 500px;
     width: 32%;
     margin-top: 30px;
     margin-bottom: 40px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 
 .buy a {
@@ -277,6 +294,7 @@ height: 500px;
     border-radius: 5px;
     margin-left: 46%;
     margin-top: 10px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .buy-grid {
     background-image: url("https://cdn.sstatic.net/Img/product/teams/illo-teams-pricing.svg?v=8afb8ac7c580");
@@ -318,7 +336,8 @@ height: 500px;
 }
 .buy-grid-box h1 {
     color: black;
-    margin-left: -160px;
+    margin-left: -28%;
+    width: 100%;
     margin-top: 20px;
 }
 .buy-grid-box span   {
@@ -352,12 +371,14 @@ height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
+    font-family: 'Source Sans Pro',sans-serif;  
 }
 .buy-grid-box-middle h5{
     width: 25%;
 }
 .buy-grid-box-middle h1{
-    margin-left: -140px;
+    margin-left: -28%;
+    width: 100%;
 }
 .buy-grid-box-start {
     margin-left: 50px;
@@ -401,7 +422,8 @@ margin-left: 0px;
 }
 
 .explore-box p {
-    font-size: 13.88px;
+    font-size: 13.58px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .explore-button {
         width: 40%;
@@ -413,6 +435,7 @@ margin-left: 0px;
         margin-top: 25px;
         margin-left: 14px;
         border-radius: 5px;
+        font-family: 'Source Sans Pro',sans-serif;
 }
 .advertising {
     width: 43%;
@@ -452,6 +475,7 @@ width: 68%;
 .features-grid-box p {
     margin-top: 10px;
     margin-left: 15px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .features-grid-box:hover {
     box-shadow: 0 1px 3px rgba(0,0,0,0.09), 0 2px 6px rgba(0,0,0, 0.09), 0 3px 8px rgba(0,0,0,0.19);
@@ -463,6 +487,7 @@ width: 68%;
     margin-right: auto;
     margin-top: 50px;
     font-size: 15px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .cerate-account {
     width: 40%;
@@ -473,6 +498,7 @@ width: 68%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .grow {
     padding-top: 200px;
@@ -494,6 +520,7 @@ margin-left: 70px;
 }
 .grow-box p {
     font-size: 13.88px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .grow-box h4 {
     padding: 16px 0px;
@@ -523,6 +550,7 @@ background-color: #fff;
 .job-text {
     text-align: center;
     padding-top: 10px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .job-button {
     border-radius: 5px;
@@ -534,6 +562,7 @@ background-color: #fff;
     margin-top: 15px;
     color: #fff;
     font-size: 13px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 
 
@@ -564,6 +593,7 @@ footer {
 .nav-box li {
     font-size: 13px;
     padding: 5px;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 }
 .copyright {
     font-size: 11px;
@@ -577,6 +607,15 @@ footer {
 }
 .copyright-bottom {
     margin-top: 130px;
+}
+@media(max-width:970px){
+    .search-icon {
+        display: block;
+        float: right;
+    }
+    .search_here {
+        display: none;
+    }
 }
 @media (max-width:600px){
     .logo img {
@@ -597,15 +636,20 @@ footer {
     .log_in {
         width: 42px;
         margin-right: 3px;
+        height: 40%;
+padding: 3px;
     }
     .Sign_up {
+        height: 40%;
+padding: 3px;
         width: 51px;
         margin-right: 2px;
     }
     .join_us {
-        margin-right: -48px;
+        margin-right: 0px;
     }
     .Search {
+        display: none;
         margin-right: 23px;
         margin-left: -10px;
     }
@@ -680,7 +724,7 @@ margin-left: 15px;
         width: 90%;
     }
     .buy-grid-box h1 {
-        margin-left: -78px;
+        margin-left: -55px;
     }
     .motives {
         display: flex;
@@ -697,7 +741,7 @@ margin-left: 15px;
     }
     .hire {
         width: 100%;
-        margin-left: 10px;
+        margin-left: 2px;
         margin-right: 0px;
     }
     .explore-box h4 {
@@ -707,7 +751,7 @@ margin-left: 15px;
     .devleopers-worldwide {
         width: 100%;
         margin-right: 0px;
-        margin-left: 10px;
+        margin-left: 2px;
         margin-top: 60px;
     }
     .explore-button {
@@ -745,10 +789,34 @@ margin-left: 15px;
         width: 90%;
         margin-bottom: 10px;
     }
-    .footer {
+    footer {
         display: block;
     }
     .footer-logo {
+        display: none;
+    }
+    .footer-nav {
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    .nav-box {
+        margin-right: 15px;
+    }
+    .nav-box h5 {
+        font-size: 14px;
+    }
+    .nav-box li {
+        font-size: 11px;
+        padding: 5px;
+    }
+    .copyright {
+        padding-left: 10px;
+    }
+    .mobilelogo {
+        display: block;
+    }
+    .logo {
         display: none;
     }
 }

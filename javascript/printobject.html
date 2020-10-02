@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print object</title>
+    <script>
+    function show(){
+      var  information = [
+          {
+        name: "Harsh Rathore",
+        class: 1+"st" + " year",
+        city: "jaipur",
+      },
+      {
+        name: "lalit Rathore",
+        class: 12+"th",
+        city: "jaipur",
+      },
+      {
+        name: "Pankaj Panwar",
+        class: 12+"th",
+        city: "jaipur",
+      },
+      {
+        name: "Ravi Jangid",
+        class: 12+"th",
+        city: "jaipur",
+      }
+      ];
+      for (var i=0; i <= information.length-1 ; i++){
+          document.write(
+              "<h2> Details of student:</h2>" + (i+1) +"</br>"
+          );
+          document.write(
+                "name: " + information[i].name + "</br>",
+                "class: " + information[i].class + "</br>",
+                "city: "  + information[i].city + "</br>"
+          )
+      }
+       
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Print data from object on screen</h1>
+    <button onclick="show()">print object</button>
+    <p id="demo"></p>
+</body>
+</html>

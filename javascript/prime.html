@@ -3,20 +3,26 @@
     <head>
         <title>Prime Number</title>
         <script>
-             var num = prompt("Enter Number");
-            isprime(num);
-            function isprime(num){
+            function isprime(){
+                var num = document.getElementById("number").value ;
                 var i;
                 for( i=2; i<num; i++){
                     if(num%i === 0){
-                        document.write("This " + num + " is not a prime number");
-                        return false;
+                        document.getElementById("Answer").innerHTML = num + " is not a prime number";
+                   
                     }else{
-                        document.write("This " + num + " is a prime number"); 
-                        return true;  
+                        document.getElementById("Answer").innerHTML = num + " is a prime number";
+                       
                     }
                 }
             }
         </script>
     </head>
+    <body>
+        <h1>Check if number is Prime</h1>
+        Enter the number: <input type="number" id="number" ></br></br>
+        <button onclick="isprime()">Check</button></br></br>
+        <span id="Answer"></span><br>
+        <img src="prime.jpg" style="width: 500px;">
+    </body>
 </html>

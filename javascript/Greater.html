@@ -3,15 +3,30 @@
     <head>
         <title>Display greater Number</title>
         <script>
-            var a = prompt("Enter 1st number : ")
-            var b = prompt("Enter 2nd number : ")
+            function findLargest(){
+                var a = document.getElementById("first").value ;
+            var b = document.getElementById("second").value ;
             if(a > b){
-                document.write("number " + a + " is greater then number " + b + " .")
-            }if(a == b){
-                document.write("number" + a + " and " + b + " are equal.")
+                document.getElementById("answer").innerHTML = "number " + a + " is greater then number " + b + " ." ;
+                // document.write("number " + a + " is greater then number " + b + " .")
+            } else if (a == b){
+                document.getElementById("answer").innerHTML = "number " + a + " and " + b + " are equal." ;
+                // document.write("number" + a + " and " + b + " are equal.")
             }else{
-                document.write("number " + b + " is greater then number " + a + " .")
+                document.getElementById("answer").innerHTML = "number " + b + " is greater then number " + a + " ." ;
+                // document.write("number " + b + " is greater then number " + a + " .")
+            }   
             }
+            
         </script>
     </head>
+    <body>
+        <h1>Write a JavaScript program that accept two integers and display the larger.</h1>
+        Enter first number: <input type="number" value="number" id="first"> </br></br>
+        Enter second number: <input type="number" id="second" value="number"></br></br>
+        <button onclick="findLargest()">Answer</button>
+        <p id="answer"></p>
+        <img src="greater.jpg" style="width: 1000px; rotate: 270deg; float: right; margin-top: 100px;" >
+    </body>
+    </html>
 </html>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <html>
+        <head>
         <title>Largest Number</title>
         <script>
-            var a = prompt("Enter 1st number: ");
-            var b = prompt("Enter 2nd number: ");
-            var c = prompt("Enter 3rd number: ");
-            var d = prompt("Enter 4th number: ");
-            var e = prompt("Enter 5th number: ");
+            function largest(){
+                var a = Number(document.getElementById("first").value) ;
+            var b = Number(document.getElementById("second").value) ;
+            var c = Number(document.getElementById("third").value) ;
+            var d = Number(document.getElementById("fourth").value) ;
+            var e = Number(document.getElementById("fifth").value) ;
             if(a>b && a>c && a>d && a>e){
                 alert("Largest number is: " + a)
             }else if(b>a && b>c && b>d && b>e){
@@ -19,6 +21,22 @@
             }else{
                 alert("Largest number is: " + e)
             }
+            }
+            
         </script>
+    </head>
+    <body>
+    <h2>
+        Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the result.
+    </h2>
+        Enter the first number: <input type="number" id="first"></br></br>
+       Enter the second number: <input type="number" id="second"></br></br>
+       Enter the third number: <input type="number" id="third"></br></br>
+       Enter the fourth number: <input type="number" id="fourth"></br></br>
+       Enter the fifth number: <input type="number" id="fifth"></br></br>
+       <button onclick="largest()" >Answer</button></br>
+       <p id="answer"></p>
+       <img src="largest-number.jpg" style="width: 1000px; rotate: 270deg; float: right; margin-top: 100px;" >
+    </body>
     </html>
 </html>

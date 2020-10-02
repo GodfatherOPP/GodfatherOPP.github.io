@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-        multiply 
-        </title>
-        <script>
-            var x = prompt("Enter 1st number:")
-            var y = prompt("Enter 2nd number:")
-            var z = prompt("Enter 3rd number:")
-            if(x < 0 && y< 0 && z < 0 ){
-                alert("The sign is +");
-            }else if(x > 0 && y > 0 && z > 0){
-                alert("The sign is +");
-            }else if (x < 0 && y < 0 && z > 0 ){
-                alert("The sign is +");
-            }else if (x > 0 && y < 0 && z < 0 ){
-                alert("The sign is +");
-            }else if (x < 0 && y > 0 && z < 0 ){
-                alert("The sign is +");
-            }else{
-                alert("The sign is -");
-            }
-        </script>
-    </head>
+
+<head>
+    <title>
+        multiply
+    </title>
+    <script>
+        function sign() {
+        var x = document.getElementById("first").value ;
+        var y = document.getElementById("second").value ;
+        var z = document.getElementById("third").value ;
+        if (x > 0 && y > 0 && z > 0) {
+            alert("The sign is +");
+        } else if (x < 0 && y < 0 && z > 0) {
+            alert("The sign is +");
+        } else if (x > 0 && y < 0 && z < 0) {
+            alert("The sign is +");
+        } else if (x < 0 && y > 0 && z < 0) {
+            alert("The sign is +");
+        } else {
+            alert("The sign is -");
+        }
+        }
+       
+    </script>
+</head>
+
+<body>
+    <h1>Write a JavaScript conditional statement to find the sign of product of three numbers. Display an alert box with
+        the specified sign.
+    </h1>
+    Enter the first number: <input type="number" id="first"></br></br>
+    Enter the second number: <input type="number" id="second"></br></br>
+    Enter the third number: <input type="number" id="third"></br></br>
+    <button onclick="sign()" >Answer</button></br>
+    <p id="answer"></p>
+    <img src="multiply-sign.jpg" style="width: 500px; margin-top: 100px;" >
+</body>
+
 </html>
 <!-- - - -
 + + +
 - - +
 + - - 
-- + - -->
+- + - 
+-->
