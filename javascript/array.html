@@ -1,50 +1,58 @@
 <html>
-    <head>
-        <title>
-            Print Array
-        </title>
-        <script>
-        
-            var text, Name, i, length ;
-    
-            Name = ["harsh", "yash", "natik", "sumit", "manansh", "rashmi", "kushi", "pihu"] ;
-            length = Name.length;
-            document.getElementById("array-length").innerHTML= length ;
-            text = "<ul>" ;
-            for(i=0; i<length; i++){
-                text += "<li>" + Name[i] + "</li>";
-            }
-            text += "</ul>"
-            document.getElementById("demo").innerHTML= text ;
-        
-    
-    
-            var data = new Array();
-            function add_element(){
-                data.push(document.getElementById('new_element').value);
-                document.getElementById('new_element').value='';
-                display()
-            }
-            function display(){
-                var place = 'total number of elements in data array : ' + data.length + '<br>';
-                for (i=0; i<data.length; i++) { 
-                    place += i + ':'+data[i] + "<br >";  
-                } 
-                document.getElementById('display').innerHTML=place;
-            }
-        </script>
-    </head>
-    <body>
-        <h2>Write an array and print the value on screen </h2>
-        <p>Given Array is:  Name = [harsh, yash, natik, sumit, manansh, rashmi, kushi, pihu]</p>
-        <p>its length is : <span id="array-length"></span></p>
-        <p id="demo"></p>
-        <h1>Create a New Array</h1>
-        <input type="text" value="" name="array[]" id="new_element"> <button onClick='add_element()'>Add to Array</button>
-        <div id=display></div>
-        <img src="array.jpg" style="width: 500px; float: right;" >
-    </body>
-   
+  <head>
+    <title>Print Array</title>
+    <script>
+      var text, Name, i, length;
+
+      Name = [
+        "harsh",
+        "yash",
+        "natik",
+        "sumit",
+        "manansh",
+        "rashmi",
+        "kushi",
+        "pihu",
+      ];
+      length = Name.length;
+      document.getElementById("array-length").innerHTML = length;
+      text = "<ul>";
+      for (i = 0; i < length; i++) {
+        text += "<li>" + Name[i] + "</li>";
+      }
+      text += "</ul>";
+      document.getElementById("demo").innerHTML = text;
+
+      var data = new Array();
+      function add_element() {
+        data.push(document.getElementById("new_element").value);
+        document.getElementById("new_element").value = "";
+        display();
+      }
+      function display() {
+        var place =
+          "total number of elements in data array : " + data.length + "<br>";
+        for (i = 0; i < data.length; i++) {
+          place += i + ":" + data[i] + "<br >";
+        }
+        document.getElementById("display").innerHTML = place;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Write an array and print the value on screen</h2>
+    <p>
+      Given Array is: Name = [harsh, yash, natik, sumit, manansh, rashmi, kushi,
+      pihu]
+    </p>
+    <p>its length is : <span id="array-length"></span></p>
+    <p id="demo"></p>
+    <h1>Create a New Array</h1>
+    <input type="text" value="" name="array[]" id="new_element" />
+    <button onClick="add_element()">Add to Array</button>
+    <div id="display"></div>
+    <img src="array.jpg" style="width: 500px; float: right" />
+  </body>
 </html>
 <!-- for(var x = 0; x < Name.length; x++){
     Name.push(Name[x].charAt(0).toUpperCase()+Name[x].slice(1)); -->

@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(219, 201, 201);
+}
+header {
+  text-align: center;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+h4 {
+  width: 28%;
+  background-color: rgb(41, 41, 165);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+h4 a {
+  text-decoration: none;
+  color: rgb(253, 237, 237);
+}
+h4:hover {
+  background-color: rgb(31, 31, 82);
+  color: #fff;
+}
+h4:hover a {
+  color: rgb(235, 176, 176);
+}
