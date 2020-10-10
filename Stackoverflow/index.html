@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <meta content="width=device-width, initial-scale=1" name="viewport" />  
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> 
+    
 </head>
 
 <body>
@@ -241,7 +242,7 @@
 </div>
     <div class="features">
         <h1>Questions are everywhere, answers are on Stack Overflow</h1>
-        <div class="features-grid">
+        <div class="features-grid" id="images">
             <div class="mobile-feature-grid">
                     <div class="question features-grid-box">
                         <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg?v=f4f2050b0297" class="d-block"
@@ -270,35 +271,35 @@
                         <p>Get recognised</p>
                     </div>
             </div>
-            <div class="start">
-                <div class="question features-grid-box">
+            <div class="start" img="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg?v=b6cd07f0765a">
+                <div class="question features-grid-box"img="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg?v=b6cd07f0765a">
                     <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg?v=f4f2050b0297" class="d-block"
                         width="46">
                     <p>Ask a question</p>
                 </div>
-                <div class="vote features-grid-box">
+                <div class="vote features-grid-box" img="https://cdn.sstatic.net/Img/home/illo-feats-vote.svg?v=9d2eb0efdc17">
                     <img src="https://cdn.sstatic.net/Img/home/votes.svg?v=748a8f48a8e2" class="d-block" width="46">
                     <p>Vote on everything</p>
                 </div>
-                <div class="answers features-grid-box">
+                <div class="answers features-grid-box" img="https://cdn.sstatic.net/Img/home/illo-feats-answer.svg?v=b637b99bc32a">
                     <img src="https://cdn.sstatic.net/Img/home/answer.svg?v=4cd8048a676c" class="d-block" width="46">
                     <p>Answer question</p>
                 </div>
             </div>
-            <div class="middle">
-                <img src="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg?v=4f011d7173e8"
+            <div class="middle" >
+                <img id="imagebox" src="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg?v=4f011d7173e8"
                     class="d-block wmx100" width="500">
             </div>
             <div class="end">
-                <div class="tag features-grid-box">
+                <div class="tag features-grid-box" img="https://cdn.sstatic.net/Img/home/illo-feats-tags.svg?v=0655cbe6bffa">
                     <img src="https://cdn.sstatic.net/Img/home/tags.svg?v=913379eb09eb" class="d-block" width="46">
                     <p>Tag your question</p>
                 </div>
-                <div class="accept-answer features-grid-box">
+                <div class="accept-answer features-grid-box" img="https://cdn.sstatic.net/Img/home/illo-feats-accept.svg?v=f2be4b8dfdac">
                     <img src="https://cdn.sstatic.net/Img/home/accept.svg?v=27d5be078970" class="d-block" width="46">
                     <p>Accept answers</p>
                 </div>
-                <div class="recognised features-grid-box">
+                <div class="recognised features-grid-box" img="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg?v=4f011d7173e8">
                     <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg?v=3b339d9aa10c" class="d-block"
                         width="46">
                     <p>Get recognised</p>
@@ -429,6 +430,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event){
+           document.getElementById("images").addEventListener("click" , function clickmethod(event)
+           {
+               
+               var newimage = event.target.getAttribute("img");
+               console.log('Target: '+ event);
+               console.log('Target: '+ JSON.stringify(event));
+               console.log(newimage);
+               document.getElementById("imagebox").setAttribute("src" , newimage)
+           })
+
+           document.querySelector(".start").addEventListener('click', (event)=>{
+                console.log('Target inner: '+ JSON.stringify(event.currentTarget));
+           });
+        });
+    </script>
 </body>
 
 </html>
