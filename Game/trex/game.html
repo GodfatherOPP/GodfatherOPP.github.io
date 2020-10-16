@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+    <style>
+      #gamearea {
+        width: 700px;
+        height: 300px;
+        border: 1px solid black;
+        margin: auto;
+        background-color: rgb(240, 255, 255);
+      }
+
+      #dino {
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        position: relative;
+        top: 230px;
+        border-radius: 50%;
+      }
+      .jumping {
+        animation: jumps 800ms;
+        animation-timing-function: linear;
+      }
+      .cactus {
+        width: 20px;
+        height: 40px;
+        background-color: darkblue;
+        position: relative;
+        top: 260px;
+        left: 680px;
+        animation: move 2s infinite;
+        animation-timing-function: linear;
+      }
+      #score {
+        width: 80px;
+        height: 30px;
+        background-color: rgb(89, 89, 204);
+        position: relative;
+        right: 0px;
+        left: 10px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      #score h3 {
+        margin: 0px;
+      }
+      #gameover {
+        width: auto;
+        color: black;
+        font-weight: bolder;
+        font-size: large;
+      }
+      @keyframes move {
+        0% {
+          left: 680px;
+        }
+        50% {
+          left: 340px;
+        }
+        100% {
+          left: -20px;
+        }
+      }
+      @keyframes jumps {
+        0% {
+          top: 230px;
+        }
+        30% {
+          top: 170px;
+        }
+        70% {
+          top: 160px;
+        }
+        85% {
+          top: 170px;
+        }
+        100% {
+          top: 230px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gamearea" onclick="jumping()">
+      <div id="gameover"></div>
+      <div id="cactus" class="cactus"></div>
+      <div id="dino" class="gameOn gameOff"></div>
+    </div>
+    <script>
+      var dino = document.getElementById("dino");
+      var cactus = document.getElementById("cactus");
+      var count = 0;
+      let scoreInterval = setInterval(() => {
+        count++;
+        var your_score = (document.getElementById("score").innerHTML =
+          "<h3> Score: " + count + "</h3>");
+      }, 500);
+      // if (dino.classList == "jumping") {
+      //   return;
+      // }
+      function jumping() {
+        dino.classList.add("jumping");
+        setTimeout(() => {
+          dino.classList.remove("jumping");
+        }, 500);
+      }
+      setInterval(() => {
+        var dinoposition = parseInt(
+          window.getComputedStyle(dino).getPropertyValue("top")
+        );
+        var cactusposition = parseInt(
+          window.getComputedStyle(cactus).getPropertyValue("left")
+        );
+        if (cactusposition < 20 && cactusposition > 0 && dinoposition > 200) {
+          console.log(dinoposition);
+          gameover();
+          clearInterval(scoreInterval);
+          var stopcactus = document.getElementById("cactus");
+          stopcactus.classList.remove("cactus");
+        }
+      }, 10);
+      function gameover() {
+        document.getElementById("gameover").innerHTML = "GAME OVER";
+      }
+    </script>
+  </body>
+</html>
