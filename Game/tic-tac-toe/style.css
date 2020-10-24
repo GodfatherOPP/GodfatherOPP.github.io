@@ -50,3 +50,16 @@ button:hover {
   box-shadow: 0 1px 3px rgba(248, 245, 245, 0.06),
     0 2px 6px rgba(248, 240, 240, 0.06), 0 3px 8px rgba(247, 241, 241, 0.09);
 }
+#over{
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  color: rgb(189, 184, 184);
+}
+.celebration img { 
+  position: absolute;
+  top: 200px;
+  width: 500px;
+  display: none;
+}
