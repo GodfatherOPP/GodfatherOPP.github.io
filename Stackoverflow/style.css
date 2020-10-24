@@ -9,7 +9,7 @@ header {
   width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   z-index: 100;
-  border-bottom: 1px solid black;
+  box-shadow: 0 7px 7px -10px #363636;
 }
 .top {
   display: flex;
@@ -294,7 +294,7 @@ header {
 .buy h1 {
   color: #fff;
   text-align: center;
-  font-size: 29px;
+  font-size: 38px;
 }
 .buy p {
   color: #fff;
@@ -483,6 +483,7 @@ header {
 .features {
   padding-top: 70px;
   text-align: center;
+  background-color: #fff;
 }
 
 .features h1 {
@@ -628,6 +629,9 @@ footer {
 .nav-box h5 {
   font-size: 16px;
 }
+.nav-box ul {
+  padding-left: 0px;
+}
 .nav-box li {
   font-size: 13px;
   padding: 5px;
@@ -647,13 +651,119 @@ footer {
   margin-top: 130px;
 }
 @media (max-width: 970px) {
+  /* header{
+    width: 100%;
+  } */
+  .top {
+    width: 98%;
+  }
+  .Search {
+    width: 30%;
+}
   .search-icon {
-    display: block;
+    display: none;
     float: right;
   }
   .search_here {
-    display: none;
+    display: block;
   }
+  .main {
+    background-color: #ffcf10;
+    background-image: url("https://cdn.sstatic.net/Img/home/illo-hero-full.svg?v=e2018a5f9272");
+    background-position: top center;
+  }
+  .block {
+    margin-left: 8%;
+}
+.for-developer {
+  margin-left: 31%;
+}
+.grid {
+  width: 90%;
+}
+.box1 {
+  margin-right: 26px;
+  width: 30%;
+  text-align: center;
+}
+.buy p {
+  margin-left: 27%;
+  width: 44%;
+}
+.buy-grid {
+  flex-wrap: wrap;
+}
+.buy-grid-box {
+  width: 35%;
+}
+.buy-grid-box h1 {
+  margin-left: -17%;
+}
+.buy-grid-box-middle h1 {
+  margin-left: -14%;
+}
+.motives {
+  width: 50%;
+  margin: auto;
+  margin-top: 80px;
+}
+.explore {
+  width: 100%;
+}
+.features-grid {
+  width: 88%;
+}
+.features-grid .start {
+  margin-right: 10px;
+}
+.features-grid .end {
+  margin-left: 10px;
+}
+.features {
+  padding-bottom: 50px;
+}
+.grow-container {
+  margin-left: 5px;
+}
+.job {
+  padding-left: 60px;
+}
+.job h1 {
+  text-align: center;
+}
+.job-container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.job-box {
+  width: 37%;
+  margin-bottom: 30px;
+  margin-right: 55px;
+}
+.footer-logo {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.nav-box {
+  margin-right: 30px;} 
+.nav-box h5 {
+  font-size: 14px;
+}
+.nav-box li {
+  list-style: none;
+}
+.footer-nav {
+  width: 93%;
+}
+.buy-grid {
+  width: 82%;
+}
+
+
+
+
+
+
 }
 @media (max-width: 600px) {
   header {
@@ -774,8 +884,9 @@ footer {
   .motives {
     display: flex;
     flex-direction: column;
-    margin-left: -70px;
-  }
+    margin-left: 0px;
+    width: 80%;
+}
   .motives a {
     margin-bottom: 10px;
   }
