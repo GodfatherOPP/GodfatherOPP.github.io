@@ -1,94 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="patient.css">
-<script>
-  // function move(){
-  //   var name = document.querySelector("#patient-name");
-  //   if ( name.style.position == "absolute"){
-  //     name.style.position = "initial"
-  //   }else{
-  //     name.style.position = "absolute"
-  //   }
-  // }
-  function show(){
-    alert("hiii");
-    var mobile = document.querySelector(".patient-mobile")
-    if ( mobile.style.position == "absolute"){
-      mobile.style.position = "initial"
-    }else{
-      mobile.style.position = "absolute"
-    }
-  }
-</script>
-    </head>
-    <body>
-        <header>
-            <img _ngcontent-c2="" class="logo" src="logo.png">
-           <select class="language">
-               <option value="English">English</option>
-               <option value="Hindi">Hindi</option>
-               <option value="Gujrati">Gujrati</option>
-               <option value="Telgu">Telgu</option>
-           </select>
-        </header>
-        <hr/>
-        <div class="box">
-            <div class="container">
-                <div class="name">
-                    <p>Dr. Harsh eClinic </p>
-                    <h3>Share patient detail's</h3>
-                </div>
-                <div class="image">
-                    <img _ngcontent-c3="" class="profile_pic" src="men.jpeg" width="94" height="79">
-                </div>
-            </div>
-        </div>
-         <div class="info">
-             <div class="detail-box">
-              <span class="patient-detail" id="patient-name">Enter patient full name</span>
-              <input type="text" class="detail"  onclick="move()">
-             </div>
-             <div class="detail-box">
-              <span class="patient-detail" class="patient-mobile" onclick="show()">Mobile number (WhatsApp preferred)</span>
-              <input type="number" class="detail">
-             </div>
-             <p class="select">Select patient gender* </p>
-             <div class="custom-contsiner">
-                <div class="custom-box">
-                  <label class="radio">
-                    <input type="radio" name="feedback" value="Male" checked> Male
-                    <span class="custom-radio"></span>
-                  </label>
-                </div>
-                <div class="custom-box">
-                  <label>
-                    <input type="radio" name="feedback" value="Female"> Female
-                     <span class="custom-radio"></span>
-                  </label>
-                </div>  
-                  <div class="custom-box">
-                  <label>
-                    <input type="radio" name="feedback" value="Other"> Other
-                      <span class="custom-radio"></span>
-                  </label>
-                </div>
-              </div>
-              <p class="select">Select patient age* </p>
-              <input type="number" value="age" class="age"/>
-              <select class="select-birth">
-                <option value="years"> years</option>
-                <option value="Months"> Months</option>
-                <option value="Days"> Days</option>
-              </select>
-         </div>
-         <div class="agrement">
-           <div class="tick">
-             <input type="checkbox" value="accept"/>
-             <p class="condition"> I have read and agree to the </p>
-           </div>
-           <a href="#" class="policy">Terms & Conditions and Privacy Policy</a>
-         </div>
-         <button class="patient">Proceed to Pay</button>
-    </body>
+
+<head>
+  <link rel="stylesheet" href="patient.css">
+  <script>
+    // function move(){
+    //   var name = document.querySelector("#patient-name");
+    //   if ( name.style.position == "absolute"){
+    //     name.style.position = "initial"
+    //   }else{
+    //     name.style.position = "absolute"
+    //   }
+    // }
+    // function show() {
+    //   var mobile = document.querySelector(".patient-mobile")
+    //   if (mobile.style.position == "absolute") {
+    //     mobile.style.position = "initial"
+    //   } else {
+    //     mobile.style.position = "absolute"
+    //   }
+    // }
+//     function show() {
+//       var mobile = document.getElementById("mobile-number");
+//       var inputBox = document.getElementById("input-box");
+// console.log(mobile);
+// console.log(inputBox);
+// console.log(inputBox.innerHTML);
+
+//       if (inputBox.innerHTML != "") {
+//         console.log(inputBox.innerHTML);
+//         mobile.style.marginBottom = "50px";
+//         console.log(inputBox.innerHTML);
+//       } else {
+//         mobile.style.marginBottom = "0px";
+//       }
+//     }
+  </script>
+</head>
+
+<body>
+  <header>
+    <img _ngcontent-c2="" class="logo" src="logo.png">
+    <select class="language">
+      <option value="English">English</option>
+      <option value="Hindi">Hindi</option>
+      <option value="Gujrati">Gujrati</option>
+      <option value="Telgu">Telgu</option>
+    </select>
+  </header>
+  <hr />
+  <div class="box">
+    <div class="container">
+      <div class="name">
+        <p>Dr. Harsh eClinic </p>
+        <h3>Share patient detail's</h3>
+      </div>
+      <div class="image">
+        <img _ngcontent-c3="" class="profile_pic" src="men.jpeg" width="94" height="79">
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <div class="detail-box">
+      <span class="patient-detail" id="patient-name">Enter patient full name</span>
+      <input type="text" class="detail" onclick="move()">
+    </div>
+    <div class="detail-box">
+      <span id="mobile-number" class="patient-detail" class="patient-mobile" >Mobile number (WhatsApp
+        preferred)</span>
+      <input type="number" class="detail" id="input-box" onclick="show()">
+    </div>
+    <p class="select">Select patient gender* </p>
+    <div class="custom-contsiner">
+      <div class="custom-box">
+        <label class="radio">
+          <input type="radio" name="feedback" value="Male" checked> Male
+          <span class="custom-radio"></span>
+        </label>
+      </div>
+      <div class="custom-box">
+        <label>
+          <input type="radio" name="feedback" value="Female"> Female
+          <span class="custom-radio"></span>
+        </label>
+      </div>
+      <div class="custom-box">
+        <label>
+          <input type="radio" name="feedback" value="Other"> Other
+          <span class="custom-radio"></span>
+        </label>
+      </div>
+    </div>
+    <p class="select">Select patient age* </p>
+    <input type="number" value="age" class="age" />
+    <select class="select-birth">
+      <option value="years"> years</option>
+      <option value="Months"> Months</option>
+      <option value="Days"> Days</option>
+    </select>
+  </div>
+  <div class="agrement">
+    <div class="tick">
+      <input type="checkbox" value="accept" />
+      <p class="condition"> I have read and agree to the </p>
+    </div>
+    <a href="#" class="policy">Terms & Conditions and Privacy Policy</a>
+  </div>
+  <button class="patient">Proceed to Pay</button>
+</body>
+
 </html>
