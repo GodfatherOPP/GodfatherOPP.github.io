@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var a = 5;
+var b= "+";
+var c= 10;
+var x = document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("click", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = a ;
+  document.getElementById("demo").removeEventListener("click", myFunction);
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML = a + b ;
+  document.getElementById("demo").removeEventListener("click", mySecondFunction);
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += a + b + c;
+}
+</script>
+
+</body>
+</html>
+
+<!--  var a;
+  var b;
+  var c;
+  document.getElementById("number").addEventListener("click", number1);
+
+  function number1(event) {
+    a = event.target.getAttribute("value");
+    document.getElementById("screen").innerHTML = a;
+    console.log(a);
+  }
+
+
+  document.getElementById("operation").addEventListener("click", (event) => {
+    b = event.target.getAttribute("value");
+    document.getElementById("screen").innerHTML = a + " " + b;
+  })
+
+  document.getElementById("number").addEventListener("click", number2);
+  function number2(event) {
+    document.getElementById("number").removeEventListener("click", number1);
+    c = event.target.getAttribute("value");
+    document.getElementById("screen").innerHTML = a + " " + b + " " + c;
+  };
+
+     document.getElementById("equal").addEventListener("click", (event) => {
+       var solution = a + b + c ;
+       document.getElementById("screen").innerHTML = solution;
+     })-->
