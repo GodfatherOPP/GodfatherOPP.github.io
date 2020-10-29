@@ -10,7 +10,9 @@ body {
   position: fixed;
   width: 100%;
 }
-
+/* .logo {
+  color: linear-gradient(red, yellow);
+} */
 nav a {
   color: white;
   font-size: 25px;
