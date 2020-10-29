@@ -65,3 +65,102 @@ function myThirdFunction() {
        var solution = a + b + c ;
        document.getElementById("screen").innerHTML = solution;
      })-->
+
+
+
+     // MAIN CODE
+     document.getElementById("number").addEventListener("click", number1);
+
+     function number1(event) {
+         if (b === "" ) {
+             a = Number(event.target.getAttribute("value"));
+             numberOne = Number(document.getElementById("screen").innerHTML += a);
+             console.log("numberOne: " + numberOne);
+         } else{
+             c = Number(event.target.getAttribute("value"));
+             numberTwo = Number(document.getElementById("screen").innerHTML += c);
+             console.log("numberTwo: " + numberTwo);
+         }
+     }
+ 
+     document.getElementById("operation").addEventListener("click", (event) => {
+         b = event.target.getAttribute("value");
+         operationAndSecondNUmber = document.getElementById("screen").innerHTML = b;
+         console.log("2: " + b);
+ 
+     })
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     // question = document.getElementById("screen").innerHTML;
+     // operator = b.substring(0, 1);
+     // numberTwo = Number(question.substring(1));
+ 
+     // console.log("question: " + question);
+     // console.log("numberOne: " + numberOne);
+     // console.log("operator: " + operator);
+     // console.log("numberTwo: " + numberTwo);
+     // question = document.getElementById("screen").innerHTML;
+     // console.log(question);
+ 
+     // // document.getElementById("number").removeEventListener("click", number1);
+     // //  document.getElementById("number").addEventListener("click", (event) => {
+     // //          c = Number(event.target.getAttribute("value"));
+     // //          numberTwo = document.getElementById("screen").innerHTML += c;
+     // //          console.log(numberTwo);
+     // //  });
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     document.getElementById("equal").addEventListener("click", (event) => {
+ 
+         var solution = proof();
+         console.log(solution);
+         document.getElementById("screen").innerHTML = solution;
+     })
+     function proof() {
+         if (b === "+") {
+             return numberOne + numberTwo;
+         }
+     }
