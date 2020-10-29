@@ -71,3 +71,8 @@
 .equal:hover{
     background-color: #e96d4b ;
 }
+@media(max-width:600px){
+    .container {
+        width: 407px;
+    }
+}
