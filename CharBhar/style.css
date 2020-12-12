@@ -1,0 +1,170 @@
+div{
+    border: 5px solid black;
+}
+#firstBlock{
+    margin-top: 100px;
+    margin-left: 450px;
+    width: 600px;
+    height: 600px;
+}
+#secondBlock{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+}
+#thirdBlock{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+#Block{
+    border: none;
+    top: 50px;
+    left: 400px;
+    width: 650px;
+    height: 650px;
+    position: absolute;
+}
+#block{
+    border: none;
+    top: 65px;
+    left: 400px;
+    width: 650px;
+    height: 650px;
+    position: absolute;
+}
+line{
+    border: 2.5px solid black;
+    width: 210px;
+    display: block;
+    position: relative;
+}
+#lineTop{
+    transform: rotate(90deg);
+    left: 264px;
+    top: 155px;
+}
+#lineRight{
+    width: 190px;
+    left: 473px;
+    top: 355px;
+}
+#lineBottom{
+    width: 190px;
+    transform: rotate(90deg);
+    left: 279px;
+    top: 552px;
+}
+#lineLeft{
+    left: 58px;
+    top: 348px;
+}
+.position-spot{
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: black;
+    position: relative;
+
+}
+#one-one{
+    top: 25px;
+    left: 48px; 
+}
+#one-two{
+    top: 300px;
+    left: 46px; 
+}
+#one-three{
+    top: 562px;
+    left: 48px; 
+}
+#one-four{
+    top: 538px;
+    left: 361px; 
+}
+#one-five{
+    top: 504px;
+    left: 648px; 
+}
+#one-six{
+    top: 180px;
+    left: 650px; 
+}
+#one-seven{
+    top: -158px;
+    left: 650px; 
+}
+#one-eight{
+    top: -190px;
+    left: 355px; 
+}
+#two-one{
+    top: -110px;
+    left: 154px; 
+}
+#two-two{
+    top: 60px;
+    left: 151px; 
+}
+#two-three{
+    top: 228px;
+    left: 154px; 
+}
+#two-four{
+    top: 201px;
+    left: 361px; 
+}
+#two-five{
+    top: 173px;
+    left: 555px; 
+}
+#two-six{
+    top: -61px;
+    left: 556px; 
+}
+#two-seven{
+    top: -290px;
+    left: 556px; 
+}
+#two-eight{
+    top: -324px;
+    left: 357px; 
+}
+#three-one{
+    top: -244px;
+    left: 259px; 
+}
+#three-two{
+    top: -179px;
+    left: 255px; 
+}
+#three-three{
+    top: -108px;
+    left: 256px; 
+}
+#three-four{
+    top: -133px;
+    left: 360px; 
+}
+#three-five{
+    top: -165px;
+    left: 456px; 
+}
+#three-six{
+    top: -301px;
+    left: 461px; 
+}
+#three-seven{
+    top: -428px;
+    left: 458px; 
+}
+#three-eight{
+    top: -460px;
+    left: 357px; 
+}

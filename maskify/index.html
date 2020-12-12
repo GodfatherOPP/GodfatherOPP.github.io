@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maskify the number</title>
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        var count=0;
+        var cardNumber = [];
+       
+      document.getElementById("numbers").addEventListener("click", (event) => {
+         
+          count++
+        var dataValue = event.target.getAttribute("data-value");
+        
+           cardNumber.push(dataValue)
+        if (count <= 16) {
+          if (count <= 12) {
+            document.getElementById("screen").innerHTML += "#";
+          } else {
+            document.getElementById("screen").innerHTML += dataValue;
+          }
+        }
+      });
+      document.getElementById("button").addEventListener("click",ShowNumber)
+    function ShowNumber(){
+      var actualNumber="" ;
+      for(i=0; i<=cardNumber.length-1; i++){
+        actualNumber += cardNumber[i]
+      }
+      console.log(actualNumber)
+      document.getElementById("Print").innerHTML = actualNumber
+    }
+    });
+
+  </script>
+  <style>
+    body{
+      text-align: center;
+    }
+    #container{
+      margin-left: 42%;
+    }
+    #screen {
+      background-color: rgb(8, 8, 8);
+      width: 247px;
+      height: 100px;
+      color: white;
+      font-size: larger;
+    }
+    #numbers {
+      width: 250px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #number {
+      display: block;
+      border: 1px solid black;
+      width: 80px;
+      height: 40px;
+      background-color: blanchedalmond;
+      font-size: larger;
+      text-align: center;
+      padding-top: 20px;
+    }
+    #Print{
+      font-size: larger;
+      color: black;
+      margin: 20px;
+    }
+    #button{
+      text-align: center;
+      margin-top: 50px;
+      width: 90px;
+      height: auto;
+      background-color: blanchedalmond;
+font-weight: bolder;
+    }
+    #Print{
+      background-color: rgb(26, 25, 25);
+      width: 250px;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="screen"></div>
+      <div id="numbers">
+        <div id="number" data-value="1">1</div>
+        <div id="number" data-value="2">2</div>
+        <div id="number" data-value="3">3</div>
+        <div id="number" data-value="4">4</div>
+        <div id="number" data-value="5">5</div>
+        <div id="number" data-value="6">6</div>
+        <div id="number" data-value="7">7</div>
+        <div id="number" data-value="8">8</div>
+        <div id="number" data-value="9">9</div>
+        <div id="number" data-value="0" style="width: 245px;">0</div>
+      </div>
+    </div>
+    <button id="button">Check actual number you typed</button>
+    <p id="Print"></p>
+  </body>
+</html>

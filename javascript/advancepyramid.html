@@ -5,19 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>advancepyramid</title>
     <script>
+      var rows = prompt();
+
       var i, j, k;
-      for (i = 1; i < 20; i++) {
-        for (k = 20; k > i; k--) {
-          document.write("<center>");
+
+      // pattern 1
+      for (i = 1; i <=rows; i++) {
+        for (j = 1; j < i; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+
+// pattern 2
+      for (i = 1; i <=rows; i++) {
+        for (k = rows-i; k > 1; k--) {
+          document.write("* ");
+        }
+        for (j = 1; j < i; j++) {
           document.write(" ");
         }
-        // document.write("<center>");
+        document.write("<br>");
+      }
+// pattern 3
+      for (i = 1; i <=rows; i++) {
+        for (k = 1; k<=rows-i; k++) {
+          document.write(" ");
+        }
         for (j = 1; j < i; j++) {
-          document.write("*");
+          document.write("* ");
         }
         document.write("<br>");
       }
     </script>
   </head>
-  <body></body>
+  <body>
+  </body>
 </html>
+<!-- 1
+    1 1
+   1 1 1
+  1 1 1 1   
+
+
+
+
+

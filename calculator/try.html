@@ -11,27 +11,40 @@
 <p id="demo"></p>
 
 <script>
-var a = 5;
-var b= "+";
-var c= 10;
-var x = document.getElementById("myBtn");
-x.addEventListener("click", myFunction);
-x.addEventListener("click", mySecondFunction);
-x.addEventListener("click", myThirdFunction);
+// var a = 5;
+// var b= "+";
+// var c= 10;
+// var x = document.getElementById("myBtn");
+// x.addEventListener("click", myFunction);
+// x.addEventListener("click", mySecondFunction);
+// x.addEventListener("click", myThirdFunction);
 
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = a ;
+//   document.getElementById("demo").removeEventListener("click", myFunction);
+// }
+
+// function mySecondFunction() {
+//   document.getElementById("demo").innerHTML = a + b ;
+//   document.getElementById("demo").removeEventListener("click", mySecondFunction);
+// }
+
+// function myThirdFunction() {
+//   document.getElementById("demo").innerHTML += a + b + c;
+// }
+myFunction();
+myFunction2()
+var car ;
 function myFunction() {
-  document.getElementById("demo").innerHTML = a ;
-  document.getElementById("demo").removeEventListener("click", myFunction);
-}
-
-function mySecondFunction() {
-  document.getElementById("demo").innerHTML = a + b ;
-  document.getElementById("demo").removeEventListener("click", mySecondFunction);
-}
-
-function myThirdFunction() {
-  document.getElementById("demo").innerHTML += a + b + c;
-}
+var carName = "BMW";
+car = "Volvo";
+console.log(car)
+} 
+function myFunction2() {
+var carName = "Tata";
+car = "Volvo";
+console.log(car)
+} 
 </script>
 
 </body>

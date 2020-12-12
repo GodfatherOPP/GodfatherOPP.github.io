@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //function to start game
   function startGame(event) {
-    reversePlayer();
+ reversePlayer();
 //it print value X or O on blocks
     function reversePlayer() {
       if (event.target.innerHTML != '' || winnerIs!= '') {
