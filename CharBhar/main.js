@@ -23,8 +23,9 @@ var positionHolder = [["","","","","","","","",],
                       ["","","","","","","","",],
                       ["","","","","","","","",],
                       ]
-
-
+var playerOneArray = []
+var playertwoArray = []
+ 
   document.getElementById("block").addEventListener("click", (event) => {
     if(count>=18){
       gameOn()
@@ -40,9 +41,11 @@ var positionHolder = [["","","","","","","","",],
     if(currentplayer == "playerOne"){
         document.getElementById(idOfClickedPosition).style.backgroundColor = "red";
         positionHolder[a][b] = "playerone";
+        playerOneArray.push("playerOne");
     }else{
         document.getElementById(idOfClickedPosition).style.backgroundColor = "green";
         positionHolder[a][b] = "playertwo";
+        playertwoArray.push("playertwo");
     }
   //  console.log(positionHolder);
   //   console.log("currentplayer: " + currentplayer);
@@ -88,13 +91,22 @@ function  checkForMill(){
 
     if((a=="playertwo" && b=="playertwo" && c=="playertwo") || (a=="playerone" && b=="playerone" && c=="playerone")){
       console.log("mill")
-      alert("Mill")
+      RemoveOpponent();
     }
+
+
+    function RemoveOpponent(){
+      if(a== "playerOne"){
+        
+      }else{
+        playertwoArray.shift()
+      }
   }
 
 }
 
 
+}
 
 
 
