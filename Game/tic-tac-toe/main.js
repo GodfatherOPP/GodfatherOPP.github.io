@@ -17,13 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
     [6, 4, 2],
   ];
   // array on which value is filled after click of each box
-  blockvaluecombination = ['', '', '', '', '', '', '', '', ''];
+
+  var firstEmptyElementArray =[];
+  var blockvaluecombination = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   var currentPlayer = "X";
   var winnerIs = "";
+  
 
   //function to start game
   function startGame(event) {
  reversePlayer();
+ Aiturn()
 //it print value X or O on blocks
     function reversePlayer() {
       if (event.target.innerHTML != '' || winnerIs!= '') {
@@ -31,9 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       currentPlayer = currentPlayer === "X" ? "O" : "X";
       event.target.innerHTML = currentPlayer;
-
     }
-
+    
+    firstEmptyElementArray = blockvaluecombination.filter((element)=>{
+      element=="number"
+    })
+   console.log(firstEmptyElementArray)
+    function Aiturn(){
+      var IndexClickedByAi = firstEmptyElementArray[0]
+      // IndexClickedByAi.toString()
+      // firstEmptyElementArray[0] = "X"
+      // document.getElementById(IndexClickedByAi).innerHTML = "X"
+      // currentPlayer = "X";
+    }
 
 //get value filled inside the block and position of the block
     // let blockvalue = event.target.innerHTML;
@@ -54,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   function blockclicked() {
     let blockFilled = blockvaluecombination.filter((element) => {
-      return element != '';
+      return element != Number;
     });
     console.log("blockFilled " +  blockFilled);
     return blockFilled.length;
@@ -78,6 +92,15 @@ document.addEventListener("DOMContentLoaded", function () {
          break;
         }
       }
+      document.getElementById("game").removeEventListener("click", startGame); 
+      document.getElementById("restart").style.display= "block";
+      restart()
     }
-    // document.getElementById("game").removeEventListener("click", startGame); 
+    function restart(){
+      blockvaluecombination = ['', '', '', '', '', '', '', '', ''];
+    var currentPlayer = "X";
+    var winnerIs = "";
+    startGame(event)
+    }
+
 });

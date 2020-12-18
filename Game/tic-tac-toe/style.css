@@ -63,3 +63,13 @@ button:hover {
   width: 500px;
   display: none;
 }
+#restart{
+  width: 100px;
+  height: 60px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  margin-top: 250px;
+  margin-left: 220px;
+  display: none;
+}
