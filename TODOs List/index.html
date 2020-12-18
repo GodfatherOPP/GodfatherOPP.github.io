@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="cssLInk" rel="stylesheet" href="style.css" />
+    <title>TODOs List</title>
+  </head>
+  <body id="body" class="lightThemeBody">
+    <header id="header" class="lightThemeHeader">
+      <nav>
+        <li>About</li>
+        <li>Work</li>
+        <li>More Project</li>
+      </nav>
+    </header>
+    <div id="box">
+      <div class="container" id="one">
+        <div class="top">
+          <img src="topImage.png" />
+        </div>
+        <h2>What's on your mind?</h2>
+        <div class="inputForm">
+          <p>Title</p>
+          <textarea id="Title" class="inputBox"></textarea>
+          <P>Description</P>
+          <textarea id="Description" class="inputBox"></textarea>
+        </div>
+        <div id="Add" class="push">
+          <h3>Push</h3>
+        </div>
+      </div>
+
+      <div class="container" id="two">
+        <div id="deign">
+          <div id="topDeign"></div>
+          <div id="bottomDesign"></div>
+        </div> 
+        <div class="centre" id="List">
+ 
+          <p class="yourTask">My task is nothing</p>
+        </div>
+        <div class="push" onclick="Delete()">
+          <h3>Delete</h3>
+        </div>
+      </div>
+
+
+      <div class="container" id="three">
+        <div class="top">
+          <img src="topImage.png" />
+        </div>
+        <h2>Description</h2>
+        <div class="descriptionBox">
+          HARSH RATHORE
+        </div>
+        <div class="dark" onclick="changeTheme()">
+          <h3 id="changeThemeTO">Dark</h3>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
