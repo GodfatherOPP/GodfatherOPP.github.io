@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <style>
+      .container {
+        width: 800px;
+        height: auto;
+        margin: auto;
+        margin-top: 100px;
+        background-color: rgba(10, 10, 10, 0.952);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 35px;
+        letter-spacing: 2px;
+        color: #777777;
+        padding: 10px;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span id="time"></span>
+      <span id="day"></span>
+    </div>
+    <script>
+      var date, hour, minutes, seconds, time, currentDate, day;
+      // time and Date
+      setInterval(() => {
+        date = new Date();
+        hour = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+        day = date.getDay();
+        currentdate = date.getDate();
+        time = (hour > 12) ? (hour-12 + ':' + minutes+ ':' + seconds +' PM') :(hour + ':' + minutes+  ':'  + seconds + ' AM') ;
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          days: "numeric",
+        };
+        var currentDate =
+          "Current date is : " +
+          currentdate +" "+
+          date.toLocaleDateString(undefined, options);
+        document.getElementById("time").innerHTML =
+        "Current time is : " +  time + "<br/><br/> " + currentDate;
+      }, 1000);
+    </script>
+  </body>
+</html>
