@@ -2,10 +2,10 @@
 padding: 0;}
 .head { font-family: Okra,Helvetica,sans-serif;
     object-fit: fill;
-    background-repeat: repeat;
     background-image: url("food.jpeg");
     height: 600px;
     width: 100%;
+    background-size: cover;
 }
 .head-navigation {
     display: flex;
@@ -244,6 +244,7 @@ padding-left: 43px;
     font-size: 15px;
     line-height: 26px;
     margin-right: 0.5rem;
+    list-style: none;
 }
 .Explore ul li:hover{
     color: #1c1c1c; 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+<style>
+       *{
+           margin: 0%;
+           padding: 0%;
+       } 
+       body{
+           height: 100vh;
+           background: linear-gradient(45deg,#fdb827,#ff4646);
+       }
+       #container{
+           position: absolute;
+           left: 35%;
+           top: 20%;
+           display: flex;
+           flex-wrap: wrap;
+           width: 280px;
+           padding: 50px;
+           text-align: center;
+           background-color: rgba(255,255,255,0.25);
+           font-family:'Courier New', Courier, monospace;
+           margin-left: auto;
+           border: none; 
+           box-shadow: 0px 8px 32px 0px rgba(104, 104, 105,0.35);
+           backdrop-filter: blur(.17px);
+           border-radius: 20px;
+           transition: all 0.2s ease-in-out;
+       }
+       #container .login { 
+           padding: 5px;
+           margin-bottom: 30px;
+           margin-left: 0px;
+           font-weight: 600;
+           opacity: .8;
+           border: none;
+           font-size: 45px;
+           text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+       }
+       .input{
+           padding: 5px;
+           height: 30px;
+           width: 250px;
+           margin-bottom: 50px;
+           background: transparent;
+           border: none;
+           font-size: 18px;
+           border-left: 1px solid rgba(255,255,255,0.3);
+           border-top: 1px solid rgba(255,255,255,0.3);
+           backdrop-filter: blur(5px);
+           border-radius: 50px;
+           padding-left: 10px;
+           box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+           text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+
+           transition: all 0.2s ease-in-out;
+       }
+       .input:hover{
+           background: rgba(255,255,255,0.1);
+           box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+       }
+       .input[type="email"]:focus,
+       .input[type="passward"]:focus{
+     background: rgba(255,255,255,0.3);
+     box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+       }
+       button{
+           height: 60px;
+           width: 150px;
+           padding: 12px;
+           background: transparent;
+           border: none;
+           font-size: 25px;
+           margin-bottom: 50px;
+           border-left: 1px solid rgba(255,255,255,0.3);
+           border-top: 1px solid rgba(255,255,255,0.3);
+           backdrop-filter: blur(5px);
+           border-radius: 50px;
+           box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+           text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+           transition: all 0.2s ease-in-out;
+       }
+     button:hover{
+         cursor: pointer;
+           background: rgba(255,255,255,0.1);
+           box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+     }
+     ::placeholder{
+         color: #111111;
+         font-weight: 400;
+     }
+     a,input:focus,button:focus{
+         outline: none;
+     }
+
+     @media (max-width: 800px){
+         #container{
+             left: 25%;
+         }
+     }
+     @media (max-width: 500px){
+         #container{
+             left: 1%;
+             width: 250px;
+         }
+     }
+     @media (max-width: 320px){
+         #container{
+             left: 3%;
+             width: 280px;
+             padding: 10px;
+         }
+     }
+</style>
+
+</head>
+<body>
+    <div id="container">
+        <P class="login">LOGIN FORM</P>
+        <form action="">
+            <input class="input" type="email" placeholder="Email">
+            <input class="input" type="password" placeholder="passward">
+            <button>Sign in</button>
+           <p> <a>Forgot passward ?</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -3,11 +3,11 @@
     padding: 0;
 }
 body{
-    background-color: rgb(255, 239, 255);
-    color: rgba(37, 39, 39, 0.534);
+    background-color: rgb(8, 8, 8);
+    color: rgba(255, 255, 255, 0.534);
 }
 header{
-    background-color: rgb(218, 238, 255);
+    background-color: rgb(24, 12, 80);
     box-shadow: 2px 2px 4px 1px rgb(114, 113, 113);
 }
 header nav{
@@ -23,10 +23,12 @@ header nav li{
    border-radius: 15%;
 }
 header nav li:hover{
-    background-color: rgb(145, 187, 224);
+    background-color: rgb(41, 8, 117);
 }
 #box{
-    
+    position: absolute;
+    top: 113px;
+    left: 120px;
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -37,22 +39,23 @@ header nav li:hover{
     border-radius: 30px;
     width: 25%;
     text-align: center;
-    box-shadow:4px 7px 7px 7px #99ccff;
     padding-bottom: 30px;
 }
 #one{
-    background-color: #a9fffe;
+    background-color: rgba(216, 214, 255, 0.25);
+    /* background-image: linear-gradient(rgba(63, 61, 61, 0.3),rgb(90, 90, 90,0.3)); */
+    
 }
 #two{
-    background-color: #ffc7c8;
+    background-color: rgba(216, 214, 255, 0.25);
     margin-top: 50px;
     width: 45%;
 }
 #three{
-    background-color: #9499ff;
+    background-color:  rgba(216, 214, 255, 0.25);
 }
 .top{
-    background-color: white;
+    background-color:  rgba(216, 214, 255, 0.25);
     width: 100%;
     height: 200px;
     border-radius: 30px;
@@ -62,7 +65,7 @@ header nav li:hover{
     box-shadow:0px 0px 7px 2px #afaaaabd;
 }
 .top img{
-    margin-top: 55px;
+   display: none;
 }
 
 .inputForm{
@@ -72,40 +75,40 @@ header nav li:hover{
     margin-right: 30px;
     height: auto;
     width: auto;
-    box-shadow:0px 0px 5px 2px #858383bd;
 }
 .inputBox{
     border: none;
     width: 100%;
-    height: 100%;
-    background-color: #a9fffe;
+    height: 100%;  
+     background-color: rgba(216, 214, 255, 0.25);
     font-size: 23px;
 }
 .push{margin: auto;
     margin-top: 30px;
-    background-color:#ffc7c8 ;
+    background-color: rgba(216, 214, 255, 0.25);
     border-radius: 50%;
     width: 80px;
     height: 80px;
     text-align: center;
-    box-shadow:2px 2px 4px 1px #d1cfce;
+    box-shadow:2px 2px 4px 1px #727272;
 }
 .push h3{
     padding-top: 28px;
 }
 .push:hover{
-    box-shadow:2px 2px 5px 4px #afafaf;
-    background-color: #ffb0b2 ;
+    box-shadow:2px 2px 5px 4px #646262;
+    background-color: rgba(130, 129, 155, 0.25);
 }
 .push:hover h3{
     font-size: 20px;
 }
+
 .centre{
     margin: auto;
     margin-top: 100px;
     padding-top: 30px;
-    background-color: #ffc7c8;
-    box-shadow: 0px 0px 5px 1px #fff;
+    background-color: rgba(216, 214, 255, 0.25);
+    box-shadow: 0px 0px 5px 1px rgb(100, 100, 100);
     border-top-left-radius: 120px;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
@@ -126,10 +129,14 @@ header nav li:hover{
     box-shadow:0px 0px 5px 2px #8a8a8a;
 }
 #two .push{
-    background-color: #a9fffe;
+    background-color:  rgba(216, 214, 255, 0.25);
+}
+#two .push:hover{
+    box-shadow:2px 2px 5px 4px #646262;
+    background-color: rgba(130, 129, 155, 0.25);
 }
 .remove{
-    background-color: #a9fffe ;
+    background-color:  rgba(216, 214, 255, 0.25) ;
     border-radius: 5px;
     border: none;
     width: 70px;
@@ -140,7 +147,7 @@ header nav li:hover{
 .theme{
     margin: auto;
     margin-top: 30px;
-    background-color:#ffc7c8 ;
+    background-color:rgba(130, 129, 155, 0.25) ;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -149,9 +156,25 @@ header nav li:hover{
     padding-top: 25px;
 }
 .theme:hover{
-    box-shadow:2px 4px 5px 4px #7a7878;
-    background-color: #ffb0b2 ;
+    box-shadow:2px 4px 5px 4px #4b4a4a;
+    background-color: rgba(130, 129, 155, 0.25) ;
 }
 .theme:hover h3 {
     font-size: 20px;
+}
+.ball1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image:linear-gradient(45deg, rgb(8, 8, 44), rgb(5, 5, 24), rgb(3, 3, 83));
+    filter: blur(0.2px);
+}
+.ball2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, rgb(1, 1, 54), rgb(6, 6, 34), rgb(2, 2, 47));
+    filter: blur(0.2px);
+    margin-left: 77%;
+margin-top: 39%;
 }
