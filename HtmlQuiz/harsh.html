@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLQUIZ-1</title>
+</head>
+
+<body>
+    <p>Enter the value of " n "</p>
+    <input id="input" type="number">
+    <button onclick="show()">Enter</button>
+    <div id="answer"></div>
+    <script>
+        var i;
+        function show() {
+            var n = Number(document.getElementById("input").value);
+            if(n>0 && n<200000){
+                for (i = 1; i <= n; i++) {
+                printValue();
+            }
+            }else{
+            alert("Enter the value of n between 0 to 2*10^5");
+        }
+        }
+        function printValue() {
+            if (i % 3 == 0 && i % 5 == 0) {
+                console.log("FizzBuzz");
+                document.getElementById("answer").innerHTML += "<p> FizzBuzz </p> ";
+            } else if (i % 3 == 0 && i % 5 != 0) {
+                console.log("Fizz");
+                document.getElementById("answer").innerHTML += "<p> Fizz </p> ";
+            } else if (i % 3 != 0 && i % 5 == 0) {
+                console.log("Buzz");
+                document.getElementById("answer").innerHTML += "<p> Buzz </p> ";
+            } else {
+                console.log(i);
+                document.getElementById("answer").innerHTML += "<p>"+i+"</p> ";
+            }
+        }
+    </script>
+</body>
+
+</html>
