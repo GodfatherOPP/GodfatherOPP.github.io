@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Remove Duplicate Character from String</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Enter the string</h1>
     <input id="String" />
     <button onclick="answer()">Click Me</button>
@@ -14,15 +14,27 @@
       function answer() {
         var enteredString = document.getElementById("String").value;
         var str = enteredString.toString().toLowerCase();
-        var strSingleChar =[""];
+        var strSingleChar = [];
+
         for (i = 0; i < str.length; i++) {
-          if (strSingleChar.includes(str[i]) == false) {
+          var tempArray = [];
+          for (j = 0; j < str.length; j++) {
+            if (str[j] == str[i]) {
+              tempArray.push(str[i]);
+            }
+          }
+
+          if (tempArray.length == 1) {
             strSingleChar.push(str[i]);
           }
-        }     
-         document.getElementById("solution").innerHTML +=
-          "<h3>String after removal of duplicate character is : " +  strSingleChar.join("") + "</h3>";
+        }
+        
+        document.getElementById("solution").innerHTML ="";
+        document.getElementById("solution").innerHTML +=
+          "<h3>String after removal of duplicate character is : " +
+          strSingleChar.join("") +
+          "</h3>";
       }
-      </script>
-</body>
+    </script>
+  </body>
 </html>
