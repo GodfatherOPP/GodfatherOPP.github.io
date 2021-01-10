@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calling effect</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{
+        margin:0;
+    }
+    body{
+        background-color: black;
+    }
+    #answer{
+        background-color: green;
+        left: 45%;        
+        top: 350px;
+    }
+    #decline{
+        background-color: red;
+        left: 72%;        
+        top: 280px;
+    }
+    .container{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        position: relative;
+        text-align: center;
+    }
+    #answer::before{
+        border: 1px solid green;
+    }
+    #answer::after{
+        border: 1px solid green;
+    }
+    #decline::before{
+        border: 1px solid red;
+    }
+    #decline::after{
+        border: 1px solid red;
+    }
+    .container::before{
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: calc(100% + 20px);
+        display: block;
+        height: calc(100% + 20px);
+        top: -11px;
+        left: -11px;
+        animation: size 1.3s linear infinite;
+    }
+
+    .container::after{
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: calc(100% + 20px);
+        display: block;
+        height: calc(100% + 20px);
+        top: -11px;
+        left: -11px;
+        animation: size 1.3s linear infinite;
+        animation-delay: 0.5s;
+    }
+    @keyframes size {
+        0%{transform: scale(0.5);
+            opacity: 0;}
+            50%{transform: scale(1);
+            opacity: 1;}
+            100%{transform: scale(1.5);
+            opacity: 0;}
+}
+i{
+    color: white;
+    margin-top: 36%;
+}
+.fa{
+    font-size: 30px;
+}
+#box{
+    border: 1px solid white;
+    width: 50%;
+}
+
+</style>    
+</head>
+
+<body>
+    <div id="box">
+    <div class="container" id="answer">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+    </div>
+    <div class="container" id="decline">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+    </div>
+    </div>
+</body>
+</html>

@@ -15,7 +15,7 @@ printf("enter fourth number : ");
 scanf("%d",&s);
 
 if(r>0 && s>0 && p%2==0 && q>r && s>p && r+s> p+q){
-    printf("Correct values");
+    printf("Correct values");54
 }else
 {
     printf("Wrong value");

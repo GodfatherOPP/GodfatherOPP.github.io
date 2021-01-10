@@ -1,6 +1,7 @@
 //code start from here
 // it prevent browser from reading event listener before page is loaded
 document.addEventListener("DOMContentLoaded", function () {
+
   // set an onclick method on each block using event listener
   document.getElementById("game").addEventListener("click", startGame);
 
@@ -19,14 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
   //function to start game
 
   var firstEmptyElementArray = [];
-  var blockvaluecombination = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+  var blockvaluecombination = [, , , , , , , , ];
   var currentPlayer = "X";
   var winnerIs = "";
 
   //function to start game
   function startGame(event) {
+
+    var IndexClickedByAi;
+
     reversePlayer();
-    Aiturn();
+   //Aiturn();
     //it print value X or O on blocks
     function reversePlayer() {
       if (event.target.innerHTML != "" || winnerIs != "") {
@@ -34,25 +38,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       currentPlayer = currentPlayer === "X" ? "O" : "X";
       event.target.innerHTML = currentPlayer;
+
+      firstEmptyElementArray = blockvaluecombination.filter((element) => {
+        element = "";
+       });
+       console.log("firstEmptyElementArray"+firstEmptyElementArray);
     }
 
-    var IndexClickedByAi;
-
-    firstEmptyElementArray = blockvaluecombination.filter((element) => {
-      element == "number";
-    });
-    console.log(firstEmptyElementArray);
     function Aiturn() {
-       IndexClickedByAi = firstEmptyElementArray[0];
+      IndexClickedByAi = firstEmptyElementArray[0];
       IndexClickedByAi.toString()
       firstEmptyElementArray[0] = "X"
       document.getElementById(IndexClickedByAi).innerHTML = "X"
       currentPlayer = "X";
     }
 
-    //get value filled inside the block and position of the block
-    // let blockvalue = event.target.innerHTML;
-    let blockposition = event.target.getAttribute("id");
 
     // fill value of block on array
     blockvaluecombination[blockposition] = currentPlayer;
