@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // take an array that store our images for game
   var cards = [
     { name: "emoji1", image: "image/emoji1.jpeg" },
     { name: "emoji2", image: "image/emoji2.jpeg" },
@@ -29,23 +30,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.sort(() => 0.5 - Math.random());
 
-
+// if player select all card correctly then he win
     if(result.innerHTML=="congratulations! you won"){
         document.getElementById("refresh").style.display = "block";
         refresh.addEventListener("click",refresh);
     }
 
-
+// this function is starting function for our game it create a board with all images allined in it
   function creatcard() {
     for (i = 0; i < cards.length; i++) {
       var card = document.createElement("img");
-      card.setAttribute("src", "image/blank.jpeg");
+      card.setAttribute("src", "image/page1.jpg");
       card.setAttribute("data-value", i);
       card.setAttribute("class", "card");
       card.addEventListener("click", flipcard);
       board.appendChild(card);
     }
   }
+
+  // this function flip the card clicked by user
   function flipcard(event) {
     var cardClicked = event.target.getAttribute("data-value");
     cardChoosen.push(cards[cardClicked].name);
@@ -56,19 +59,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // create a function that check if first card clicked by user matches second card if not flip them back
+  // if yes then give user a point and change the card image (image that implies that card is selected).
   function win() {
     let firstCard = cardChoosenId[0];
     let secondCard = cardChoosenId[1];
     var currentCard = document.querySelectorAll("img");
     if (cardChoosen[0] == cardChoosen[1]) {
       alert("you found a match");
-      currentCard[firstCard].setAttribute("src", "image/page1.jpg");
-      currentCard[secondCard].setAttribute("src", "image/page1.jpg");
+      currentCard[firstCard].setAttribute("src", "image/blank.jpeg");
+      currentCard[secondCard].setAttribute("src", "image/blank.jpeg");
       cardWon.push("1");
     } else {
       alert("Beter luck next time!");
-      currentCard[firstCard].setAttribute("src", "image/blank.jpeg");
-      currentCard[secondCard].setAttribute("src", "image/blank.jpeg");
+      currentCard[firstCard].setAttribute("src", "image/page1.jpg");
+      currentCard[secondCard].setAttribute("src", "image/page1.jpg");
     }
     cardChoosen = [];
     cardChoosenId = [];
@@ -77,6 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
       result.innerHTML = "congratulations! you won";
     }
   }
+  creatcard();
+});
+
+
+
+
+
+
   
 //   function refresh(){
 //     creatcard()
@@ -87,5 +100,3 @@ document.addEventListener("DOMContentLoaded", () => {
 //     result.innerHTML = 0;
 //   }
   
-  creatcard();
-});
