@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="style" rel="stylesheet" href="style.css">
+    <title>Analog clock using css</title>
+</head>
+<body>
+  <div class="container">
+    <div class="toggle-button " onclick="Toggle()">
+        <div class="circle"></div>
+    </div>
+  </div>
+    <div id="clock">
+        <div id="center"></div>
+
+        <div class="numbers">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="secHand"></div>
+        <div class="minHand"></div>
+        <div class="hrHand"></div>
+    </div>
+ <script>
+ 
+//  const secHand = document.querySelector(".secHand");
+//     const minHand = document.querySelector(".minHand");
+//     const hourHand = document.querySelector(".hrHand");
+    
+//     setInterval(()=>{
+//     let time = new Date();
+
+//    var second = time.getSeconds() *6;
+//    var minutes = time.getMinutes() *6;
+//    var hours = time.getHours() *30;
+
+//   minHand.style.transform =`rotateZ(${minutes}deg)`;
+//   secHand.style.transform = `rotateZ(${second}deg)`;
+//   hourHand.style.transform = `rotateZ(${hours}deg)`;
+//     },1000);
+let toggleButton = document.querySelector(".toggle-button");
+function Toggle(){
+   
+    toggleButton.classList.toggle("dark");
+   changeTheme();
+}
+function changeTheme(){
+let theme = document.querySelector(".style")
+let toggleClass = toggleButton.classList;
+if(toggleClass.contains("dark") ){
+    console.log("dark theme")
+theme.setAttribute("href", "dark.css");
+}else{
+theme.setAttribute("href","style.css");
+    console.log("light theme")
+
+}
+}
+
+</script>
+</body>
+</html>

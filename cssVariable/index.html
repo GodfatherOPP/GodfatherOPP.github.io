@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --B: 20%;
+            --H: 200px;
+            --W: 200px;
+        }
+        
+        #container{
+            
+            background-color: red;
+            border-radius: var(--B);
+            height: var(--H);
+            width: var(--W);
+        }
+    </style>
+    <title>Css Variable</title>
+</head>
+<body>
+    <h6 id="Range">
+      border-radius  <input class="slider" type="range" min="0" max="100" data-suffix="%"  data-property="--B" value="100">
+    </h6>
+
+    <h6 id="Range">
+      Height  <input class="slider" type="range" min="0" max="1000" data-suffix="px" data-property="--H" value="100">
+    </h6>
+    <h6 id="Range">
+       Width <input class="slider" type="range" min="0" max="1000" data-suffix="px"  data-property="--W" value="100">
+    </h6>
+    <div id="container"></div>
+
+
+    <script>
+    var sliders = document.querySelectorAll(".slider");
+    const root = document.documentElement;
+    
+    sliders.forEach(slider=>{slider.addEventListener("input",(e)=>{
+        root.style.setProperty(`${slider.dataset.property}`,e.target.value +`${slider.dataset.suffix}`)
+    })})
+
+
+    </script>
+</body>
+</html>

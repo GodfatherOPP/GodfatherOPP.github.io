@@ -2,10 +2,12 @@
 //Area of circle
 int main()
 {
-    int radius;
+    double radius;
     float pie = 3.14;
     printf("Enter the radius of circle: ");
-    scanf("%d", &radius);
-    printf("Area of circle is %f", pie*radius*radius);
+    scanf("%lf", &radius);
+    printf("diameter of circle is %.2f square unit \n", 2*radius);
+    printf("Area of circle is %.2f square unit\n", pie*radius*radius);
+    printf("peremeter of circle is %.2f square unit \n", 2*pie*radius);
     return 0;
 }

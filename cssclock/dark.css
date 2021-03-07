@@ -1,0 +1,152 @@
+*{margin: 0;
+    padding: 0;}
+    
+    body,html{
+        height: 100%;
+    }
+    body{
+        display: grid;
+        place-items: center;
+        background-color: #262626;
+        
+    }
+    .container{
+        margin: 50px auto auto 100px;
+    }
+    .toggle-button{
+    background-color: rgba(94,104,121,0.400);
+    border-radius: 50px;
+    width: 80px;
+    height: 35px;
+    padding: 2px;
+    
+    transition: 0.5s ease-in-out;
+    }
+    .circle{
+        background-color: rgb(136, 136, 136);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: 2px;
+        transition: 0.5s ease-in-out;
+    }
+    .dark{
+        background-color: #123235;
+        }
+    .dark > .circle{
+            background-color: rgb(77, 77, 77);
+            margin-left: 45px;
+        }
+    
+    
+    #clock{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      background-color: #282a2c;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+     box-shadow: -3px -3px 7px #4d4d4d73, 3px 3px 6px rgba(40, 43, 49, 0.4);
+    }
+    #clock::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(44, 44, 46, 0.4);
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+       box-shadow: inset -3px -3px 7px #3a3a3a73,inset  3px 3px 6px rgba(39, 40, 41, 0.4);
+      }
+      #clock::after{
+        content: '';
+        position: absolute;
+        background-color: rgba(22, 22, 22, 0.4);
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+       box-shadow:  -1px -1px 7px #22202073,  1px 1px 3px rgba(26, 28, 31, 0.4);
+      }
+    
+      #center{
+          height: 20px;
+          width: 20px;
+          background-color: #404040;
+          border-radius: 50%;
+          z-index: 2;
+      }
+      .numbers{
+          position: absolute;
+      }
+      .numbers div{
+          position: absolute;
+          background-color: #404040;
+          width: 5px;
+          height: 10px;
+      }
+      .numbers div:nth-child(1){
+          transform:rotate(30deg) translateY(-125px);
+      }
+      .numbers div:nth-child(2){
+          transform:rotate(60deg) translateY(-125px);
+      }
+      .numbers div:nth-child(3){
+          transform:rotate(90deg) translateY(-116px);
+      }
+      .numbers div:nth-child(4){
+          transform:rotate(120deg) translateY(-116px);
+      }
+      .numbers div:nth-child(5){
+          transform:rotate(150deg) translateY(-116px);
+      }
+      .numbers div:nth-child(6){
+          transform:rotate(180deg) translateY(-116px);
+      }
+      .numbers div:nth-child(7){
+          transform:rotate(210deg) translateY(-116px);
+      }
+      .numbers div:nth-child(8){
+          transform:rotate(240deg) translateY(-125px);
+      }
+      .numbers div:nth-child(9){
+          transform:rotate(270deg) translateY(-125px);
+      }
+      .numbers div:nth-child(10){
+          transform:rotate(300deg) translateY(-125px);
+      }
+      .numbers div:nth-child(11){
+          transform:rotate(330deg) translateY(-125px);
+      }
+      .numbers div:nth-child(12){
+          transform:rotate(360deg) translateY(-125px);
+      }
+    
+      .secHand{
+          position: absolute;
+          top: 57px;
+          width: 3px;
+          height: 120px;
+          background-color: aqua;
+          z-index: 2;
+          transform-origin: 100%;
+          transform: rotate(60deg);
+      }
+      .minHand{
+        position: absolute;
+        top: 75px;
+        width: 4px;
+        height: 100px;
+        background-color: black;
+        z-index: 2;
+        transform-origin: 100%;
+    }
+    .hrHand{
+        position: absolute;
+        top: 95px;
+        width: 5px;
+        height: 80px;
+        background-color: red;
+        z-index: 2;
+        transform-origin: 100%;
+    }
